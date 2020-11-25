@@ -1,4 +1,4 @@
-# Welcome to Reporthub MkDocs
+# Welcome to Reporthub MkDocs :books:
  [mkdocs.org](https://www.mkdocs.org).
 
 ## Repositories
@@ -7,7 +7,9 @@
 
 * Back End [https://github.com/drfaustusfade/ngm-reportEngine](https://github.com/drfaustusfade/ngm-reportEngine).
 
+## API
 
+* API Redoc Documentation :pencil: https://dev.reporthub.org/apidocs
 ## Commands
 
 * `mkdocs new [dir-name]` - Create a new project.
