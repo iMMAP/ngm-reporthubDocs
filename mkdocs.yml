@@ -1,6 +1,14 @@
 site_name: ReportHub Docs
+nav:
+    - Home: index.md
+    - Modules: module.md
+    - Services: services.md
+    - About: about.md
 theme:
   name: material
+  palette:
+    primary: blue
+  
 
 markdown_extensions:
   - pymdownx.emoji:
