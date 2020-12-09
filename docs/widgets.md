@@ -547,5 +547,112 @@ Example
 
 ```
 
+## **Make Custom Widget**  
+
+In ReportHub you can make a custom widget to provide a component with the function that you want.
+
+### 1. Create the Widget config 
+Here the template code  
+
+```
+    angular.module( '**put name of your widget**', [ 'ngm.provider' ])
+	.config( function( dashboardProvider ){
+		dashboardProvider
+			.widget('**put name of your widget**', {
+				title: '**put title of your widget**',
+				description: '**put description of your widget**',
+				controller: '**put name of your controller**',
+				templateUrl: '**put path of html file for this widget**'
+			});
+```
+note : please keep the 'ngm.provider' when make a widget
+
+Example:   
+```
+angular.module( 'ngm.widget.project.financials', [ 'ngm.provider' ])
+  .config( function( dashboardProvider ){
+    dashboardProvider
+      .widget('project.financials', {
+        title: 'Cluster Financial Form',
+        description: 'Cluster Financial Form',
+        controller: 'ClusterProjectFormFinancialCtrl',
+        templateUrl: '/scripts/modules/cluster/views/forms/financials/form.html'
+      });
+  })
+```
+### 2. Create the Controller 
+Here the template code
+
+```
+.controller( 'ClusterProjectFormFinancialCtrl', [
+]function (){}
+]);
+
+```
+note: for the detail information how to make angularjs controller, this is the reference  
+ ([controller in angularjs](https://docs.angularjs.org/guide/controller)) 
+
+Example :
+
+```
+.controller('ClusterProjectFormFinancialCtrl', ['$scope', function($scope) {
+  $scope.greeting = 'Hola!';
+}]);
+
+```
+### 3. Example of the Widget Code
+```
+angular.module( 'ngm.widget.project.financials', [ 'ngm.provider' ])
+  .config( function( dashboardProvider ){
+    dashboardProvider
+      .widget('project.financials', {
+        title: 'Cluster Financial Form',
+        description: 'Cluster Financial Form',
+        controller: 'ClusterProjectFormFinancialCtrl',
+        templateUrl: '/scripts/modules/cluster/views/forms/financials/form.html'
+      });
+  })
+  .controller( 'ClusterProjectFormFinancialCtrl', [
+    '$scope',
+    '$location',
+    '$timeout',
+    '$filter',
+    '$q',
+    '$http',
+    '$route',
+    'ngmUser',
+    'ngmAuth',
+    'ngmData',
+    'ngmClusterHelper',
+		'ngmClusterLists',
+    'ngmClusterFinancial',
+    'ngmClusterImportFile',
+    'config',
+    '$translate',
+    function ($scope, $location, $timeout, $filter, $q, $http, $route, ngmUser, ngmAuth, ngmData, ngmClusterHelper, ngmClusterLists, ngmClusterFinancial, ngmClusterImportFile, config,$translate ){
+        ***********
+    }])
+```
+
+### 4. Put the widget in the main module
+So to use custom widget in this app we have to inject it to main module   
+
+The main module of Reporthub is ``ngmReportHub``.
+It will look like the snippet code below.    
+
+```
+angular
+	.module('ngmReportHub', [
+		
+		'ngm.widget.organization.stock',
+    ])
+```
+### 5. Don't forget to put file path of your widget
+
+Don't forget to put path file path of your widget in ``index.html``
+
+
+
+
 
 
