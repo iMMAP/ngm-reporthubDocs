@@ -62,8 +62,9 @@
 > purpose   :   to get user user menu params
 ### getEditableRoles()
 > use       :   ngmAuth
-> purpose   :   to get user's allowed roles to edit on users
-
+> purpose   :   to get user's allowed roles to edit on users  
+## **ngmPermissions**
+> In ngmPermissions contain a list of a role to assign user-level access 
 ## **ngmClusterHelper**
 ### setForm()
 >use        : ClusterProjectFormDetailsCtrl (Page Project Detail ).  
