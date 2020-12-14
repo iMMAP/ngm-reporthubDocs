@@ -32,10 +32,10 @@ For the custom module is module made by reporthub team to provide specific funct
 ### Custom Module 
 - **ngm.widget.form.authentication**
 - [**ngm.widget.project.details**](/module/#12-clusterprojectformdetailsctrl)
-- **ngm.widget.project.financials**
-- **ngm.widget.project.report**
-- **ngm.widget.organization.stocks.list**
-- **ngm.widget.organization.stock**
+- [**ngm.widget.project.financials**](/module/#21-clusterprojectfinancialsctrl)
+- [**ngm.widget.project.report**](/module/#3-monthly-report)
+- [**ngm.widget.organization.stocks.list**](/module/#41-clusterorganizationstockslistctrl)
+- [**ngm.widget.organization.stock**](/module/#43-clusterorganizationstockreportctrl)
 - **ngm.widget.form.organization.list**
 - **ngm.widget.upload.beneficiaries.stock.report**
 - [**ngmCluster**](/module/#cluster-module) 
@@ -69,7 +69,7 @@ Report Feature is to create report based on project and record every progress of
 
 ### Reports
  
-Report Have 3 main funtion
+Report Have 4 main function
 
 #### 1. Project Plan/Detail
 #### 1.1 ClusterProjectDetailsCtrl
@@ -142,14 +142,14 @@ Function in this controller
 #### 3.1 ClusterProjectReportsListCtrl
 `Controller : ClusterProjectReportsListCtrl`
 
-In Monthly report list purpose is to show report for each month based on project periode.
+The purpose of this controller purpose is to show report for each month based on project periode.
 ClusterProjectReportsListCtrl Controller is to retrieve report that should be completed by user based on month.
 
 #### 3.2 ClusterProjectReportCtrl
 `Controller : ClusterProjectReportCtrl`
 
-The purpose of this controller to make report monthly . In the Monthly Report have a form that manage by ClusterProjectFormReportCtrl.  
-In Monthly report form the main information that shoulbe reported is beneficiary, so the form that should be completed is beneficiary form.  
+The purpose of this controller is to make report monthly . The Monthly Report have a form that manage by ClusterProjectFormReportCtrl.  
+In Monthly report form the main information that should be reported is beneficiary, so the form that should be completed is beneficiary form.  
 
 
 #### 3.3 ClusterProjectFormReportCtrl
@@ -157,7 +157,8 @@ In Monthly report form the main information that shoulbe reported is beneficiary
 `Controller : ClusterProjectFormReportCtrl`
 ![all-monthly-diagram](img/monthly-report-diagram.png)  
 
-Within this controller there are several service used, are as follow :
+Within this controller there are several services used, are as follow :  
+
 - ngmClusterLists : to provide currencies list that used in the form.
 - ngmClusterHelper : to clean the report
 - ngmClusterBeneficiaries: to set form for beneficiaries , to set intial atrribute to make new beneficiary, to remove report etc.
@@ -169,7 +170,58 @@ function in this controller
 - copyPreviousMonth: function to copy report from previous month report.
 - removeBeneficiary: function to remove beneficiary from report using ** [ngmClusterBeneficiaries removeBeneficiary](/services/#removebeneficiary "Title") **
 - removeReport: functiom remove report
-- validateBeneficiariesDetailsForm: function to validate all beneficiary form the monthly report using **[ngmClusterValidation validateBeneficiaries](/services/#validatebeneficiaries "Title")** function.  
+- validateBeneficiariesDetailsForm: function to validate all beneficiary form the monthly report using **[ngmClusterValidation validateBeneficiaries](/services/#validatebeneficiaries "Title")** function.
+
+#### 4. Stock Report
+#### 4.1 ClusterOrganizationStocksListCtrl
+This Controller purpose is to show stock report for each month based on project periode.
+ClusterOrganizationStocksListCtrl Controller is to retrieve report that should be completed by user based on month.
+Another  purpose is to add a location warehouse for stock. Form to add new location is manage by ClusterOrganizationStocksFormList Controller on **ngm.widget.organization.stocks.list** .  
+
+#### 4.2 ClusterOrganizationStocksFormList
+`Module: ngm.widget.organization.stocks.list`  
+`Controller: ClusterOrganizationStocksFormList`
+
+Within this controller there are several services used, are as follow :
+- ngmClusterHelper : to set new location  attribute
+
+function in this controller 
+
+- addlocation : function to add new warehouse location
+- removeLocation: function to remove warehouse location 
+
+#### 4.3 ClusterOrganizationStockReportCtrl
+The purpose of this controller is to make stock report . The Stock Report have form that manage by ClusterOrganizationStockForm Controller on **ngm.widget.organization.stock** module  
+
+#### 4.4 ClusterOrganizationStockForm
+`Module: ngm.widget.organization.stock`  
+`Controller: ClusterOrganizationStockForm`   
+
+Within this controller there are several services used, are as follow :  
+
+- ngmClusterLists : to provide currencies list that used in the form.
+- ngmClusterHelper : to clean the report
+
+function in this controller
+
+- addStock :  function to add stock in form
+- removeStock : functio to remove stock from report
+- validateForm : function to validate stock form
+- copyPrevReport : function to copy report stock from previous report.  
+
+## Authentication Module  
+A module that provides a function to authenticating and manage user (CRUD) using ngmAuth services. 
+And the controller that manage all the form for authentication are `AuthenticationFormCtrl`.   
+Below is list of function that provides by this module.  
+
+#### 1. Sign In / Register
+#### 2. Log In
+#### 3. Log Out
+#### 4. Update Profile
+#### 5. Delete User
+#### 6. Reset Password
+#### 7. Manage User Access
+
 
 
 
