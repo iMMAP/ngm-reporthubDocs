@@ -53,7 +53,7 @@ Steps
 		
 2. in ``@ReportHub/ngm`` folder fetch ``ngm-reportShell`` repo 
 
-		$ git clone https://github.com/pfitzpaddy/ngm-reportShell.git
+		$ git clone https://github.com/iMMAP/ngm-reportShell.git
 		
 3. cd into ``ngm-reportShell``
 
