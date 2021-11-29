@@ -6,6 +6,7 @@ nav:
     - Services: services.md
     - Widgets: widgets.md
     - Layout: layout.md
+    - Filter: filter.md
     - About: about.md
 theme:
   name: material
