@@ -3,9 +3,9 @@
 
 ## Repositories
 
-* Front End [https://github.com/drfaustusfade/ngm-reportHub](https://github.com/drfaustusfade/ngm-reportHub).
+* Front End [https://github.com/iMMAP/ngm-reportHub](https://github.com/iMMAP/ngm-reportHub).
 
-* Back End [https://github.com/drfaustusfade/ngm-reportEngine](https://github.com/drfaustusfade/ngm-reportEngine).
+* Back End [https://github.com/iMMAP/ngm-reportEngine](https://github.com/iMMAP/ngm-reportEngine).
 
 <!-- ## API
 
