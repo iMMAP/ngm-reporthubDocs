@@ -6,9 +6,9 @@
 
 ### Requirements
 
-- Dropbox 33.4.xx
-- Vagrant v1.9.xx
-- VirtualBox v5.1.xx
+<!-- - Dropbox 33.4.xx -->
+- Vagrant v1.9.xx or newer version
+- VirtualBox v5.1.xx or newer version
 
 # Getting Started
 
@@ -17,7 +17,25 @@ The first steps will be to establish a local development environment on your mac
 Steps
 
 1. Install Software Requirements listed above on your local machine
-2. Setup Local Project Folders
+2. Make a folder with name ``Reporthub``
+	$ cd ReportHub
+3. Make a folder name ``ngm``
+4. Go to [here](https://immap.sharepoint.com/sites/SouthandCentralAsia/Afghanistan%20Library/Forms/AllItems.aspx?id=%2Fsites%2FSouthandCentralAsia%2FAfghanistan%20Library%2FMigration%20from%20Dropbox%5F211109%2FiMMAP%20AF%20Team%20Folder%2FReportHub%2Fngm&viewid=395452ab%2D8406%2D442f%2Db426%2Dbaccbd7d9da9)
+
+5. Download  all the folder And put it to folder ``Reporthub/ngm``, except the following folders:
+	- ``ngm-reportEngine``
+	- ``ngm-reportHub``
+	- ``ngm-reportPrint``
+	- ``ngm-reportShell``
+
+	
+
+6. Fork the repo below to your github :
+	- [https://github.com/iMMAP/ngm-reportHub](https://github.com/iMMAP/ngm-reportHub).
+	- [https://github.com/iMMAP/ngm-reportEngine](https://github.com/iMMAP/ngm-reportEngine).
+
+<!-- OLD instruction -->
+<!-- 2. Setup Local Project Folders
 3. Add to your Dropbox the ``iMMAP AF Team Folder`` [here](https://www.dropbox.com/sh/5eti378yx2qxbxq/AAAFjJkGznjwk8IkZmRkRc7Ma?dl=0)
 4. On your local machine, select ``Dropbox 'Settings' > 'Preferences...'``
 5. Select ``Account`` tab followed by ```Change Settings...```
@@ -29,7 +47,7 @@ Steps
 	- ``ngm-reportShell``
 6. Finally select ``Update`` and close
 	
-	> NOTE: in Dropbox select ```Pause Syncing``` in low bandwidth environments.
+	> NOTE: in Dropbox select ```Pause Syncing``` in low bandwidth environments. -->
 	
 # Contributing Code
 
@@ -43,15 +61,15 @@ Please review the following links in order to understand how to contribute code 
 
 # Vagrant Local Server
 
-With Dropbox folders unselected for sync, run the following commands to setup the local development environment.
+Run the following commands to setup the local development environment.
 
 Steps
   
-1. on the cmd line, navigate to ``ReportHub/ngm`` folder in Dropbox
+1. on the cmd line, navigate to ``ReportHub/ngm`` folder in your local machine
 
-		$ cd ~/Dropbox/ReportHub/ngm/ReportHub/ngm
+		$ cd ~/ReportHub/ngm/ReportHub/ngm
 		
-2. in ``@ReportHub/ngm`` folder fetch ``ngm-reportShell`` repo 
+2. in ``ReportHub/ngm`` folder fetch ``ngm-reportShell`` repo 
 
 		$ git clone https://github.com/iMMAP/ngm-reportShell.git
 		
@@ -59,19 +77,24 @@ Steps
 
 
 		$ cd ngm-reportShell
+
+4. Open ``ngm-reporthub.shell.build.sh``
 		
-4. Update the GitHub repository locations to your forked version of the code
+5. Uncomment and update the gitHub repository locations to your forked version of the code
 
 		# UPDATE TO YOUR FORKED REPO!
 		sudo git clone https://github.com/<your.fork>/ngm-reportHub.git
+	
+		# UPDATE TO YOUR FORKED REPO!
+		sudo git clone https://github.com/<your.fork>/ngm-reportEngine.git
 
-5. Run [Vagrant Up](https://www.vagrantup.com/docs/cli/up.html) command
+6. Run [Vagrant Up](https://www.vagrantup.com/docs/cli/up.html) command
 
 		$ vagrant up
 		
 	> NOTE: This will take some time to fetch the Ubuntu Lts 14.04 VirtualBox image as well as install server software to establish a replica local server environemnt
 
-5. During install, review VirtualBox configurations in 
+7. During install, review VirtualBox configurations in 
 	- ``ngm-reportShell/Vagrantfile``
 	- ``ngm-reportShell/ngm-reporthub.shell.build.sh``
 
