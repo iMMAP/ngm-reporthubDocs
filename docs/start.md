@@ -27,7 +27,7 @@ Steps
 
 		$ mkdir ngm
 
-4. Go to [here](https://immap.sharepoint.com/sites/SouthandCentralAsia/Afghanistan%20Library/Forms/AllItems.aspx?id=%2Fsites%2FSouthandCentralAsia%2FAfghanistan%20Library%2FMigration%20from%20Dropbox%5F211109%2FiMMAP%20AF%20Team%20Folder%2FReportHub%2Fngm&viewid=395452ab%2D8406%2D442f%2Db426%2Dbaccbd7d9da9)
+4. Go to [here](https://immap.sharepoint.com/:f:/s/SouthandCentralAsia/Ei_bwVT9kKtEusTeb_JNF88B8yxbcCrVfSwdZQdJK8GH4g?e=ddZUFx)
 
 5. Download  all the folder And put it to folder ``Reporthub/ngm``, except the following folders:
 	- ``ngm-reportEngine``
