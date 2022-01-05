@@ -74,7 +74,7 @@ Steps
   
 1. on the cmd line, navigate to ``ReportHub/ngm`` folder in your local machine
 
-		$ cd ~/ReportHub/ngm/ReportHub/ngm
+		$ cd ReportHub/ngm
 		
 2. in ``ReportHub/ngm`` folder fetch ``ngm-reportShell`` repo 
 
