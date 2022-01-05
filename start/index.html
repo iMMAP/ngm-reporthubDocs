@@ -1,0 +1,596 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.4">
+    
+    
+      
+        <title>Getting Started - ReportHub Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bb3983ee.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#reporthub" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ReportHub Docs" class="md-header__button md-logo" aria-label="ReportHub Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ReportHub Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Getting Started
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ReportHub Docs" class="md-nav__button md-logo" aria-label="ReportHub Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    ReportHub Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Getting Started
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../module/" class="md-nav__link">
+        Modules
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/" class="md-nav__link">
+        Services
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../widgets/" class="md-nav__link">
+        Widgets
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layout/" class="md-nav__link">
+        Layout
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../filter/" class="md-nav__link">
+        Filter
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<h1 id="reporthub"><a href="http://reporthub.immap.org">ReportHub</a></h1>
+<blockquote>
+<p>Reporting Workflow. Decision Support. Real-Time.</p>
+<p>Developer documentation for local project setup</p>
+</blockquote>
+<h3 id="requirements">Requirements</h3>
+<!-- - Dropbox 33.4.xx -->
+<ul>
+<li>Vagrant v1.9.xx or newer version</li>
+<li>VirtualBox v5.1.xx or newer version</li>
+</ul>
+<h1 id="getting-started">Getting Started</h1>
+<p>The first steps will be to establish a local development environment on your machine. </p>
+<!-- and establish connection with the DEV server. -->
+
+<p>Steps</p>
+<ol>
+<li>Install Software Requirements listed above on your local machine</li>
+<li>
+<p>Make a folder with name <code>Reporthub</code></p>
+<pre><code>$ mkdir Reporthub
+$ cd ReportHub
+</code></pre>
+</li>
+<li>
+<p>Make a folder name <code>ngm</code></p>
+<pre><code>$ mkdir ngm
+</code></pre>
+</li>
+<li>
+<p>Go to <a href="https://immap.sharepoint.com/:f:/s/SouthandCentralAsia/Ei_bwVT9kKtEusTeb_JNF88B8yxbcCrVfSwdZQdJK8GH4g?e=ddZUFx">here</a></p>
+</li>
+<li>
+<p>Download  all the folder And put it to folder <code>Reporthub/ngm</code>, except the following folders:</p>
+<ul>
+<li><code>ngm-reportEngine</code></li>
+<li><code>ngm-reportHub</code></li>
+<li><code>ngm-reportPrint</code></li>
+<li><code>ngm-reportShell</code></li>
+</ul>
+</li>
+<li>
+<p>Fork the repo below to your github :</p>
+<ul>
+<li><a href="https://github.com/iMMAP/ngm-reportHub">https://github.com/iMMAP/ngm-reportHub</a>.</li>
+<li><a href="https://github.com/iMMAP/ngm-reportEngine">https://github.com/iMMAP/ngm-reportEngine</a>.</li>
+</ul>
+</li>
+</ol>
+<!-- OLD instruction -->
+<!-- 2. Setup Local Project Folders
+3. Add to your Dropbox the ``iMMAP AF Team Folder`` [here](https://www.dropbox.com/sh/5eti378yx2qxbxq/AAAFjJkGznjwk8IkZmRkRc7Ma?dl=0)
+4. On your local machine, select ``Dropbox 'Settings' > 'Preferences...'``
+5. Select ``Account`` tab followed by ```Change Settings...```
+6. Navigate to ```iMMAP AF Team Folder/ReportHub/ngm```
+5. Unselect the following folders;
+    - ``ngm-reportEngine``
+    - ``ngm-reportHub``
+    - ``ngm-reportPrint``
+    - ``ngm-reportShell``
+6. Finally select ``Update`` and close
+
+    > NOTE: in Dropbox select ```Pause Syncing``` in low bandwidth environments. -->
+
+<h1 id="contributing-code">Contributing Code</h1>
+<p>Please review the following links in order to understand how to contribute code to ReportHub repositories</p>
+<h3 id="github-fork-pull-approach">GitHub Fork &amp; Pull Approach</h3>
+<ul>
+<li><a href="https://gist.github.com/Chaser324/ce0505fbed06b947d962">Fork &amp; Pull Approach</a></li>
+<li><a href="https://guides.github.com/introduction/flow/">Github Flow</a></li>
+</ul>
+<h1 id="vagrant-local-server">Vagrant Local Server</h1>
+<p>Run the following commands to setup the local development environment.</p>
+<p>Steps</p>
+<ol>
+<li>
+<p>on the cmd line, navigate to <code>ReportHub/ngm</code> folder in your local machine</p>
+<pre><code>$ cd ReportHub/ngm
+</code></pre>
+</li>
+<li>
+<p>in <code>ReportHub/ngm</code> folder fetch <code>ngm-reportShell</code> repo </p>
+<pre><code>$ git clone https://github.com/iMMAP/ngm-reportShell.git
+</code></pre>
+</li>
+<li>
+<p>cd into <code>ngm-reportShell</code></p>
+<pre><code>$ cd ngm-reportShell
+</code></pre>
+</li>
+<li>
+<p>Open <code>ngm-reporthub.shell.build.sh</code></p>
+</li>
+<li>
+<p>Uncomment and update the gitHub repository locations to your forked version of the code</p>
+<pre><code># UPDATE TO YOUR FORKED REPO!
+sudo git clone https://github.com/&lt;your.fork&gt;/ngm-reportHub.git
+
+# UPDATE TO YOUR FORKED REPO!
+sudo git clone https://github.com/&lt;your.fork&gt;/ngm-reportEngine.git
+</code></pre>
+</li>
+<li>
+<p>Run <a href="https://www.vagrantup.com/docs/cli/up.html">Vagrant Up</a> command</p>
+<pre><code>$ vagrant up
+</code></pre>
+<blockquote>
+<p>NOTE: This will take some time to fetch the Ubuntu Lts 14.04 VirtualBox image as well as install server software to establish a replica local server environemnt</p>
+</blockquote>
+</li>
+<li>
+<p>During install, review VirtualBox configurations in </p>
+<ul>
+<li><code>ngm-reportShell/Vagrantfile</code></li>
+<li><code>ngm-reportShell/ngm-reporthub.shell.build.sh</code></li>
+</ul>
+</li>
+</ol>
+<h1 id="running-reporthub">Running ReportHub</h1>
+<p>Once the VirtualBox is completed installation, you can access the configured ReportHub Ubuntu LTS 14.0.4 Virtual Machine via the <code>vagrant ssh</code> command</p>
+<p>Steps</p>
+<ol>
+<li>
+<p>Within the <code>ngm-reportShell</code> folder, ssh into machine</p>
+<pre><code>$ vagrant ssh
+</code></pre>
+</li>
+<li>
+<p>Within the server, navigate to the <code>ngm-reportEngine</code> repository</p>
+<pre><code>$ cd /home/ubuntu/nginx/www/ngm-reportEngine
+</code></pre>
+</li>
+<li>
+<p>Start the Sails RestAPI application</p>
+<pre><code>$ sudo sails lift
+</code></pre>
+</li>
+<li>
+<p>Navigate to <a href="http://192.168.33.16">http://192.168.33.16</a> and ReportHub is running!</p>
+</li>
+</ol>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../module/" class="md-footer__link md-footer__link--next" aria-label="Next: Modules" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Modules
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.361d90f1.min.js"}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.289a2a4b.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1298 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.4">
+    
+    
+      
+        <title>Widgets - ReportHub Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bb3983ee.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#what-is-widget" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ReportHub Docs" class="md-header__button md-logo" aria-label="ReportHub Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ReportHub Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Widgets
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ReportHub Docs" class="md-nav__button md-logo" aria-label="ReportHub Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    ReportHub Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../start/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../module/" class="md-nav__link">
+        Modules
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/" class="md-nav__link">
+        Services
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Widgets
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Widgets
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-widget" class="md-nav__link">
+    What is widget ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-of-widget" class="md-nav__link">
+    List of Widget
+  </a>
+  
+    <nav class="md-nav" aria-label="List of Widget">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-ngm-calheatmap" class="md-nav__link">
+    1. ngm-calHeatmap
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ngm-dropzone" class="md-nav__link">
+    2. ngm-dropzone
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ngm-highchart" class="md-nav__link">
+    3. ngm-highchart
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-ngm-html" class="md-nav__link">
+    4. ngm-html
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-ngm-leaflet" class="md-nav__link">
+    5. ngm-leaflet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-ngm-list" class="md-nav__link">
+    6. ngm-list
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-ngm-modal" class="md-nav__link">
+    7. ngm-modal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-ngm-stats" class="md-nav__link">
+    8. ngm-stats
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-ngm-table" class="md-nav__link">
+    9. ngm-table
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#make-custom-widget" class="md-nav__link">
+    Make Custom Widget
+  </a>
+  
+    <nav class="md-nav" aria-label="Make Custom Widget">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-the-widget-config" class="md-nav__link">
+    1. Create the Widget config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-create-the-controller" class="md-nav__link">
+    2. Create the Controller
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-example-of-the-widget-code" class="md-nav__link">
+    3. Example of the Widget Code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-put-the-widget-in-the-main-module" class="md-nav__link">
+    4. Put the widget in the main module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-dont-forget-to-put-file-path-of-your-widget" class="md-nav__link">
+    5. Don't forget to put file path of your widget
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layout/" class="md-nav__link">
+        Layout
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../filter/" class="md-nav__link">
+        Filter
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-widget" class="md-nav__link">
+    What is widget ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-of-widget" class="md-nav__link">
+    List of Widget
+  </a>
+  
+    <nav class="md-nav" aria-label="List of Widget">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-ngm-calheatmap" class="md-nav__link">
+    1. ngm-calHeatmap
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ngm-dropzone" class="md-nav__link">
+    2. ngm-dropzone
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ngm-highchart" class="md-nav__link">
+    3. ngm-highchart
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-ngm-html" class="md-nav__link">
+    4. ngm-html
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-ngm-leaflet" class="md-nav__link">
+    5. ngm-leaflet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-ngm-list" class="md-nav__link">
+    6. ngm-list
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-ngm-modal" class="md-nav__link">
+    7. ngm-modal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-ngm-stats" class="md-nav__link">
+    8. ngm-stats
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-ngm-table" class="md-nav__link">
+    9. ngm-table
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#make-custom-widget" class="md-nav__link">
+    Make Custom Widget
+  </a>
+  
+    <nav class="md-nav" aria-label="Make Custom Widget">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-the-widget-config" class="md-nav__link">
+    1. Create the Widget config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-create-the-controller" class="md-nav__link">
+    2. Create the Controller
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-example-of-the-widget-code" class="md-nav__link">
+    3. Example of the Widget Code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-put-the-widget-in-the-main-module" class="md-nav__link">
+    4. Put the widget in the main module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-dont-forget-to-put-file-path-of-your-widget" class="md-nav__link">
+    5. Don't forget to put file path of your widget
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+  <h1>Widgets</h1>
+
+<h2 id="what-is-widget">What is widget ?</h2>
+<p>Widget are some simple component with specific function.</p>
+<h2 id="list-of-widget">List of Widget</h2>
+<h3 id="1-ngm-calheatmap">1. ngm-calHeatmap</h3>
+<p>Widget used to create calender heatmap<br />
+<img alt="calHeatmap" src="../img/calheatmap.png" />
+<strong>How to use</strong> <br />
+ Put snippet code below  in your model</p>
+<pre><code>widgets: [{
+                type: 'calHeatmap',
+                card: 'card-panel',
+                config: { * optional*}
+            }]
+</code></pre>
+<p>Example :</p>
+<pre><code>$scope.model = {    name:&quot;*****&quot;,  
+                        header:{},  
+                        menu:[],  
+                        rows:[{  
+                                columns: [{  
+                                    styleClass: 's12 m12 l12',  
+                                    widgets: [{  
+                                        type: 'calHeatmap',  
+                                        card: 'card-panel',  
+                                        style: 'padding-top:5px;',  
+                                        config: {  
+                                            *optional*  
+                                        }  
+                                    }]  
+                                }]  
+                        }]  
+                    }
+</code></pre>
+<h3 id="2-ngm-dropzone">2. ngm-dropzone</h3>
+<p>Widget used to upload file
+<img alt="dropzone" src="../img/dropzone.png" />
+Put snippet code below  in your model</p>
+<pre><code>widgets: [{
+                                    type: 'dropzone',
+                                    style: 'padding: 0px;',
+                                    card: 'white grey-text text-darken-2',
+                                    config: {
+                                        parallelUploads: 1,
+                                        cardTitle: 'Title',
+                                        header: 'collection-header blue',
+                                        dictMsg: '&lt;div style=&quot;font-weight:400;font-size:1.2rem;&quot;&gt;Round ' + $scope.report.report_round + ', Distribution ' + $scope.report.report_distribution + '&lt;br/&gt;Drag &amp; Drop Planned Beneficiaries&lt;/div&gt;',
+                                        minimize: {
+                                            open: !data.length,
+                                            toggle: true,
+                                            disabled: !data.length
+                                        },
+                                        url: ngmAuth.LOCATION + '/api/upload-file',
+                                        acceptedFiles: '.xlsx',
+                                        headers: { 'Authorization': 'Bearer ' + **token** },
+                                        successMessage: false,
+                                        process: {
+                                            redirect: 'redirect link',
+                                            requests: **API**
+                                        }
+                                    }
+                                }]
+
+</code></pre>
+<p>Example</p>
+<pre><code>            $scope.model = {
+                        name:&quot;*****&quot;,  
+                        header:{},  
+                        menu:[],
+                        rows:[{
+                            columns: [{
+                                styleClass: 's12 m12 l12',
+                                widgets: [{
+                                    type: 'dropzone',
+                                    style: 'padding: 0px;',
+                                    card: 'white grey-text text-darken-2',
+                                    config: {
+                                        parallelUploads: 1,
+                                        cardTitle: $scope.report.organization_tag.toUpperCase() + ' Planned Beneficiaries',
+                                        header: 'collection-header blue',
+                                        dictMsg: '&lt;div style=&quot;font-weight:400;font-size:1.2rem;&quot;&gt;Round ' + $scope.report.report_round + ', Distribution ' + $scope.report.report_distribution + '&lt;br/&gt;Drag &amp; Drop Planned Beneficiaries&lt;/div&gt;',
+                                        minimize: {
+                                            open: !data.length,
+                                            toggle: true,
+                                            disabled: !data.length
+                                        },
+                                        url: ngmAuth.LOCATION + '/api/upload-file',
+                                        acceptedFiles: '.xlsx',
+                                        headers: { 'Authorization': 'Bearer ' + ngmUser.get().token },
+                                        successMessage: false,
+                                        process: {
+                                            redirect: 'bgd/cxb/gfa/gfd/round/' + $scope.report.report_round + '/distribution/' + $scope.report.report_distribution + '/' + $scope.report.reporting_period + '/plan/' + $scope.report.organization_tag + '/all/all/all/all',
+                                            requests: [{
+                                                method: 'POST',
+                                                url: ngmAuth.LOCATION + '/api/wfp/gfa/gfd/processPlannedBeneficiaries',
+                                                data: {
+                                                    admin0pcode: $scope.report.user.admin0pcode,
+                                                    organization_tag: $scope.report.organization_tag,
+                                                    report_round: $scope.report.report_round,
+                                                    report_distribution: $scope.report.report_distribution,
+                                                }
+                                            }]
+                                        }
+                                    }
+                                }]
+
+                            }]
+                        }]
+                }
+</code></pre>
+<h3 id="3-ngm-highchart">3. ngm-highchart</h3>
+<p>Widget used to create charts
+<img alt="highchart" src="../img/highchart.png" /><br />
+<strong>How to use</strong>  </p>
+<p>Put snippet code below  in your model</p>
+<pre><code>widgets: [{
+            type: 'highchart',
+            style: 'height: 300px;',
+            card: 'card-panel chart-stats-card white grey-text text-darken-2',
+            config: {
+
+            }
+        }]
+</code></pre>
+<p>Example :</p>
+<pre><code>$scope.model = {    name:&quot;*****&quot;,  
+                        header:{},  
+                        menu:[],  
+                        rows:[
+                        {
+                            columns: [
+
+                            {
+                                styleClass: 's12 m6 l6',
+                                widgets: [{
+                                    type: 'highchart',
+                                    style: 'height: 300px;',
+                                    card: 'card-panel chart-stats-card white grey-text text-darken-2',
+                                    config: {
+                                        title: {
+                                            //text: $filter('translate')('children'),
+                                            text: $filter('translate')('executor_organizations_mayus')+&quot; TOP 5 (# - %)&quot;
+                                        },
+
+                                        display: {
+                                            label: true,
+                                            fractionSize: 1,
+                                            subLabelfractionSize: 0,
+                                            postfix: '%'
+                                        },
+                                        templateUrl: '/scripts/widgets/ngm-highchart/template/projectplandashboardcolumns.html',
+                                        style: '&quot;text-align:center; width: 100%; height: 100%; position: absolute; top: 0px; left: 0;&quot;',
+                                        chartConfig: {
+                                            options: {
+                                                chart: {
+                                                    type: 'column',
+                                                    height: 250,
+                                                    //margin: [0,0,0,0],
+                                                //spacing: [0,0,0,0]
+                                                },
+                                                tooltip: {
+                                                    enabled: true,
+                                                      headerFormat: '&lt;span style=&quot;font-size:11px&quot;&gt;{series.name}&lt;/span&gt;&lt;br&gt;',
+                                                      //pointFormat: '&lt;span style=&quot;color:{point.color}&quot;&gt;{point.name} (# - %): &lt;/span&gt; &lt;b&gt;{point.y} - '+ $filter('translate')('{point.label:.1f}')+'%&lt;/b&gt; '+$filter('translate')('of_total')+'&lt;br/&gt;'
+                                                      pointFormat: '&lt;span style=&quot;color:{point.color}&quot;&gt;{point.name} (# - %): &lt;/span&gt; &lt;b&gt;${point.yformat} - {point.label:.1f}%&lt;/b&gt; '+$filter('translate')('of_total')+'&lt;br/&gt;'
+                                                },
+                                                xAxis: {
+                                                    type: 'category',
+                                                title: {
+                                                   text: $filter('translate')('executor_organizations')
+                                                }
+                                            },
+                                                yAxis: {
+                                                title: {
+                                                   text: $filter('translate')('total_by_organization_and_percent_of_total')
+                                                }
+                                            }
+
+                                            },
+                                            title: {
+                                                    text: '',
+                                                    margin: 0
+                                            },
+                                            series: [{
+                                                //name: $filter('translate')('children'),
+                                                name: $filter('translate')('organization'),
+                                                //name: &quot;EDAD (# - %)&quot;,
+                                                size: '100%',
+                                                innerSize: '100%',
+                                                showInLegend:false,
+                                                 dataLabels: {
+                                                        enabled: true,
+                                                       // format: '{point.y} - {point.label:.1f}%'
+                                                       format: '${point.yformat}&lt;br&gt;{point.label:.1f}%'
+                                                        //inside: true
+                                                    },
+                                                //request: $scope.dashboard.getRequest({ indicator: 'BarChartAges', chart_for:'ages'})  ,
+                                                 request: $scope.dashboard.getRequest({ indicator: 'BarChartFinancingExecutorOrg', chart_for:'financingExecutorOrg'}),
+                                            }]
+                                        }
+                                    }
+                                }]
+                            }
+
+                          ]
+                        }
+                    ]
+                }
+</code></pre>
+<h3 id="4-ngm-html">4. ngm-html</h3>
+<p>widget used to call component made using html.  </p>
+<p>You can make your custom component and call using this widget.  </p>
+<p><img alt="html" src="../img/html.png" /><br />
+<strong>How to use</strong>
+Put snippet code below  in your model</p>
+<pre><code>widgets: [{
+                                    type: 'html',
+                                    card: 'card-panel',
+                                    style: 'padding:0px; height: 90px; padding-top:10px;',
+                                    config: {
+                                        *optional*
+                                    }
+                                }]
+</code></pre>
+<p>Example:</p>
+<pre><code>$scope.model ={
+    name:&quot;*****&quot;,  
+                        header:{},  
+                        menu:[],  
+                        rows:[{
+                            columns:[{
+                                styleClass: 's12 m12 l12',
+                            widgets: [{
+                                    type: 'html',
+                                    card: 'card-panel',
+                                    style: 'padding:0px; height: 90px; padding-top:10px;',
+                                    config: {
+                                        *optional*
+                                    }
+                                }]
+                            }]
+
+                        }]
+}
+</code></pre>
+<h3 id="5-ngm-leaflet">5. ngm-leaflet</h3>
+<p>Widget used to show a map 
+<img alt="map" src="../img/map.png" />
+<strong>How to use</strong></p>
+<p>Put snippet code below  in your model  </p>
+<pre><code>widgets: [{
+                                    type: 'leaflet',
+                                    card: 'card-panel',
+                                    style: 'padding:0px;',
+                                    config: {
+                                        height: '490px',
+                                        display: {
+                                            type: 'marker',
+                                            zoomToBounds: true,
+                                            // zoomCorrection: -3
+                                        },
+                                        defaults: {
+                                            zoomToBounds: true
+                                        },
+                                        layers: {
+                                            baselayers: {
+                                                osm: {
+                                                    name: 'Mapbox',
+                                                    type: 'xyz',
+                                                    url: '**mapboxtoken**',
+                                                    layerOptions: {
+                                                        continuousWorld: true
+                                                    }
+                                                }
+                                            },
+                                            overlays: {
+                                                ****
+                                            }
+                                        },
+                                        request: **API request**
+                                    }
+                                }]
+</code></pre>
+<p>Example:</p>
+<pre><code>$scope.model ={
+    name:&quot;*****&quot;,  
+                        header:{},  
+                        menu:[],  
+                        rows:[{
+
+                            columns: [{
+                                styleClass: 's12 m12 l12',
+                                widgets: [{
+                                    type: 'leaflet',
+                                    card: 'card-panel',
+                                    style: 'padding:0px;',
+                                    config: {
+                                        height: '490px',
+                                        display: {
+                                            type: 'marker',
+                                            zoomToBounds: true,
+                                            // zoomCorrection: -3
+                                        },
+                                        defaults: {
+                                            zoomToBounds: true
+                                        },
+                                        layers: {
+                                            baselayers: {
+                                                osm: {
+                                                    name: 'Mapbox',
+                                                    type: 'xyz',
+                                                    url: '',
+                                                    layerOptions: {
+                                                        continuousWorld: true
+                                                    }
+                                                }
+                                            },
+                                            overlays: {
+                                                health: {
+                                                    name: 'Health',
+                                                    type: 'markercluster',
+                                                    visible: true,
+                                                    layerOptions: {
+                                                            maxClusterRadius: 90
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        request: $scope.dashboard.getHealthRequest( 'markers' )
+                                    }
+                                }]
+                            }]
+                        }
+                    }]
+</code></pre>
+<h3 id="6-ngm-list">6. ngm-list</h3>
+<p>Widget to show list of data.<br />
+<img alt="list" src="../img/list.png" />
+In this widget you can make your own style for list</p>
+<p><strong>How to use</strong> 
+Put snippet code below  in your model   </p>
+<pre><code>widgets: [{
+                                type: 'list',
+                                card: 'white grey-text text-darken-2',
+                                config: {
+                                    titleIcon: '**foricon**',
+                                    color: 'blue lighten-1',
+                                    textColor: 'white-text',
+                                    title: '**title**',
+                                    icon: 'edit',
+                                    request: **API request**
+                                }
+                            }]
+</code></pre>
+<p>Example:</p>
+<pre><code>$scope.model ={
+    name:&quot;*****&quot;,  
+                        header:{},  
+                        menu:[],  
+                        rows:[{
+                        columns: [{
+                            styleClass: 's12 m12 l12',
+                            widgets: [{
+                                type: 'list',
+                                card: 'white grey-text text-darken-2',
+                                config: {
+                                    titleIcon: 'alarm_on',
+                                    // color: 'teal lighten-4',
+                                    color: 'blue lighten-1',
+                                    textColor: 'white-text',
+                                    title: $route.current.params.admin0pcode === 'af' ? $filter('translate')('active_activty_plans'):$filter('translate')('active_projects'),
+                                    icon: 'edit',
+                                    request: $scope.report.getProjectRequest( 'active' )
+                                }
+                            }]
+                        }]
+                    }]
+                }
+
+</code></pre>
+<h3 id="7-ngm-modal">7. ngm-modal</h3>
+<p>Widget to set a modal 
+<strong>How to use</strong>
+Put snippet code below in your model</p>
+<pre><code>    widgets: [{
+                                        type: 'modal',
+                                        config: {
+                                            id: '**forid**',
+                                            materialize: {
+                                                dismissible: false
+                                            }
+                                        }
+</code></pre>
+<p>Example :</p>
+<pre><code>$scope.model = {
+                        name:&quot;*****&quot;,  
+                        header:{},  
+                        menu:[],
+                        rows: [{
+                                columns: [{
+                                    styleClass: 's12 m12 l12',
+                                    widgets: [{
+                                        type: 'modal',
+                                        config: {
+                                            id: 'ngm-dews-modal',
+                                            materialize: {
+                                                dismissible: false
+                                            }
+                                        }
+                                    }]
+                                }]
+                            }
+                        ]
+                }
+</code></pre>
+<h3 id="8-ngm-stats">8. ngm-stats</h3>
+<p>Widget to show some static number
+<img alt="stast" src="../img/stats.png" /></p>
+<p><strong>How to use</strong>
+Put snippet code below in your model</p>
+<pre><code>widgets: [{
+                        type: 'stats',
+                        style: 'text-align:center; height:235px; padding-top:90px;',
+                        card: 'card-panel stats-card white grey-text text-darken-2',
+                        config: {
+                            title:*title*,
+                            request: *API to get data*
+                        }
+                    }]
+</code></pre>
+<p>Example</p>
+<pre><code>$scope.model = {
+                        name:&quot;*****&quot;,  
+                        header:{},  
+                        menu:[],
+                        rows: [{
+                            columns: [
+                                {
+                                styleClass: 's12 m6 l3',
+                                widgets: [{
+                                    type: 'stats',
+                                    style: 'text-align: center;',
+                                    card: 'card-panel stats-card white grey-text text-darken-2',
+                                    config: {
+                                        title: $filter('translate')('sectors_mayus'),
+                                        request: $scope.dashboard.getRequest( 'sectors', 'active' )
+                                    }
+                                }]
+                            }]
+
+                        }]
+                }
+
+</code></pre>
+<h3 id="9-ngm-table">9. ngm-table</h3>
+<p>Widget to show table
+<img alt="table" src="../img/table.png" /></p>
+<p><strong>How to use</strong><br />
+Put snippet code below in your model</p>
+<pre><code>widgets: [{
+                                    type: 'table',
+                                    card: 'panel',
+                                    style: 'padding:0px; height: ' + $scope.dashboard.ngm.style.height + 'px;',
+                                    config: {
+                                        showTitle:'',
+                                        style: '',
+                                        headerClass: 'collection-header red lighten-2',
+                                        headerText: 'white-text',
+                                        headerIcon: 'assignment_late',
+                                        headerTitle: '',
+                                        templateUrl: 'path html file',
+                                        tableOptions:{
+                                            count: 10
+                                        },
+                                        request: **API**
+                                    }
+                                }]
+</code></pre>
+<p>Example</p>
+<pre><code> $scope.model= {   name:&quot;*****&quot;,  
+                        header:{},  
+                        menu:[],
+                        rows:[{
+                            columns: [{
+                                styleClass: 's12 m12 l12 remove',
+                                widgets: [{
+                                    type: 'table',
+                                    card: 'panel',
+                                    style: 'padding:0px; height: ' + $scope.dashboard.ngm.style.height + 'px;',
+                                    config: {
+                                        user: $scope.dashboard.user,
+                                        cluster_id: $scope.dashboard.cluster_id,
+                                        showTitle: $scope.dashboard.report_type === 'activity' ? true : false,
+                                        style: $scope.dashboard.ngm.style,
+                                        headerClass: 'collection-header teal lighten-2',
+                                        headerText: 'white-text',
+                                        headerIcon: 'assignment_turned_in',
+                                        headerTitle: $filter('translate')('reports_completed'),
+                                        templateUrl: '/scripts/widgets/ngm-table/templates/cluster/admin.project.list.html',
+                                        tableOptions:{
+                                            count: 10
+                                        },
+                                        request: {
+                                            method: 'POST',
+                                            url: ngmAuth.LOCATION + '/api/cluster/admin/indicator',
+                                            data: $scope.dashboard.getRequest( 'reports_submitted', true )
+                                        }
+                                    }
+                                }]
+                            }]
+                        }]
+                    }
+
+</code></pre>
+<h2 id="make-custom-widget"><strong>Make Custom Widget</strong></h2>
+<p>In ReportHub you can make a custom widget to provide a component with the function that you want.</p>
+<h3 id="1-create-the-widget-config">1. Create the Widget config</h3>
+<p>Here the template code  </p>
+<pre><code>    angular.module( '**put name of your widget**', [ 'ngm.provider' ])
+    .config( function( dashboardProvider ){
+        dashboardProvider
+            .widget('**put name of your widget**', {
+                title: '**put title of your widget**',
+                description: '**put description of your widget**',
+                controller: '**put name of your controller**',
+                templateUrl: '**put path of html file for this widget**'
+            });
+</code></pre>
+<p>note : please keep the 'ngm.provider' when make a widget</p>
+<p>Example:   </p>
+<pre><code>angular.module( 'ngm.widget.project.financials', [ 'ngm.provider' ])
+  .config( function( dashboardProvider ){
+    dashboardProvider
+      .widget('project.financials', {
+        title: 'Cluster Financial Form',
+        description: 'Cluster Financial Form',
+        controller: 'ClusterProjectFormFinancialCtrl',
+        templateUrl: '/scripts/modules/cluster/views/forms/financials/form.html'
+      });
+  })
+</code></pre>
+<h3 id="2-create-the-controller">2. Create the Controller</h3>
+<p>Here the template code</p>
+<pre><code>.controller( 'ClusterProjectFormFinancialCtrl', [
+]function (){}
+]);
+
+</code></pre>
+<p>note: for the detail information how to make angularjs controller, this is the reference<br />
+ (<a href="https://docs.angularjs.org/guide/controller">controller in angularjs</a>) </p>
+<p>Example :</p>
+<pre><code>.controller('ClusterProjectFormFinancialCtrl', ['$scope', function($scope) {
+  $scope.greeting = 'Hola!';
+}]);
+
+</code></pre>
+<h3 id="3-example-of-the-widget-code">3. Example of the Widget Code</h3>
+<pre><code>angular.module( 'ngm.widget.project.financials', [ 'ngm.provider' ])
+  .config( function( dashboardProvider ){
+    dashboardProvider
+      .widget('project.financials', {
+        title: 'Cluster Financial Form',
+        description: 'Cluster Financial Form',
+        controller: 'ClusterProjectFormFinancialCtrl',
+        templateUrl: '/scripts/modules/cluster/views/forms/financials/form.html'
+      });
+  })
+  .controller( 'ClusterProjectFormFinancialCtrl', [
+    '$scope',
+    '$location',
+    '$timeout',
+    '$filter',
+    '$q',
+    '$http',
+    '$route',
+    'ngmUser',
+    'ngmAuth',
+    'ngmData',
+    'ngmClusterHelper',
+        'ngmClusterLists',
+    'ngmClusterFinancial',
+    'ngmClusterImportFile',
+    'config',
+    '$translate',
+    function ($scope, $location, $timeout, $filter, $q, $http, $route, ngmUser, ngmAuth, ngmData, ngmClusterHelper, ngmClusterLists, ngmClusterFinancial, ngmClusterImportFile, config,$translate ){
+        ***********
+    }])
+</code></pre>
+<h3 id="4-put-the-widget-in-the-main-module">4. Put the widget in the main module</h3>
+<p>So to use custom widget in this app we have to inject it to main module   </p>
+<p>The main module of Reporthub is <code>ngmReportHub</code>.
+It will look like the snippet code below.    </p>
+<pre><code>angular
+    .module('ngmReportHub', [
+
+        'ngm.widget.organization.stock',
+    ])
+</code></pre>
+<h3 id="5-dont-forget-to-put-file-path-of-your-widget">5. Don't forget to put file path of your widget</h3>
+<p>Don't forget to put path file path of your widget in <code>index.html</code></p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../services/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Services" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Services
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../layout/" class="md-footer__link md-footer__link--next" aria-label="Next: Layout" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Layout
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.361d90f1.min.js"}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.289a2a4b.min.js"></script>
+      
+    
+  </body>
+</html>

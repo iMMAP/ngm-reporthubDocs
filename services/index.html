@@ -1,0 +1,2705 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.4">
+    
+    
+      
+        <title>Services - ReportHub Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bb3983ee.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ngmuser" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ReportHub Docs" class="md-header__button md-logo" aria-label="ReportHub Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ReportHub Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Services
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ReportHub Docs" class="md-nav__button md-logo" aria-label="ReportHub Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    ReportHub Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../start/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../module/" class="md-nav__link">
+        Modules
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Services
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Services
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ngmuser" class="md-nav__link">
+    ngmUser
+  </a>
+  
+    <nav class="md-nav" aria-label="ngmUser">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    get()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set" class="md-nav__link">
+    set()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unset" class="md-nav__link">
+    unset()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasrole" class="md-nav__link">
+    hasRole()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasanyrole" class="md-nav__link">
+    hasAnyRole()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmauth" class="md-nav__link">
+    ngmAuth
+  </a>
+  
+    <nav class="md-nav" aria-label="ngmAuth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#register" class="md-nav__link">
+    register()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updateprofile" class="md-nav__link">
+    updateProfile()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#login" class="md-nav__link">
+    login()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passwordresetsend" class="md-nav__link">
+    passwordResetSend()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passwordreset" class="md-nav__link">
+    passwordReset()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logout" class="md-nav__link">
+    logout()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setsessiontimeout" class="md-nav__link">
+    setSessionTimeout()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grantpublicaccess" class="md-nav__link">
+    grantPublicAccess
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isanonymous" class="md-nav__link">
+    isAnonymous()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isauthenticated" class="md-nav__link">
+    isAuthenticated()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getuserroledescriptions" class="md-nav__link">
+    getUserRoleDescriptions()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#userpermissions" class="md-nav__link">
+    userPermissions()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cando" class="md-nav__link">
+    canDo()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getrouteparams" class="md-nav__link">
+    getRouteParams()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmenuparams" class="md-nav__link">
+    getMenuParams()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geteditableroles" class="md-nav__link">
+    getEditableRoles()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmpermissions" class="md-nav__link">
+    ngmPermissions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmclusterhelper" class="md-nav__link">
+    ngmClusterHelper
+  </a>
+  
+    <nav class="md-nav" aria-label="ngmClusterHelper">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setform" class="md-nav__link">
+    setForm()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getnewproject" class="md-nav__link">
+    getNewProject()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getprojecthrpcode" class="md-nav__link">
+    getProjectHrpCode()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getprojecthrpname" class="md-nav__link">
+    getProjectHrpName()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compileinterclusteractivities" class="md-nav__link">
+    compileInterClusterActivities()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compilestrategicobjectives" class="md-nav__link">
+    compileStrategicObjectives()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compilempcpurpose" class="md-nav__link">
+    compileMpcPurpose()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compileactivitytype" class="md-nav__link">
+    compileActivityType()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compiledonor" class="md-nav__link">
+    compileDonor()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcleanwarehouselocation" class="md-nav__link">
+    getCleanWarehouseLocation()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcleanstocks" class="md-nav__link">
+    getCleanStocks()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcleantargetlocation" class="md-nav__link">
+    getCleanTargetLocation()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcleanreport" class="md-nav__link">
+    getCleanReport()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcountrymenu" class="md-nav__link">
+    getCountryMenu()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getregionmenu" class="md-nav__link">
+    getRegionMenu()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cleancopyproject" class="md-nav__link">
+    cleanCopyProject()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmclustervalidation" class="md-nav__link">
+    ngmClusterValidation
+  </a>
+  
+    <nav class="md-nav" aria-label="ngmClusterValidation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#updateselect" class="md-nav__link">
+    updateSelect()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project_details_valid" class="md-nav__link">
+    project_details_valid()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projectdescription" class="md-nav__link">
+    projectDescription()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity_type_valid" class="md-nav__link">
+    activity_type_valid()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project_donor_valid" class="md-nav__link">
+    project_donor_valid()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#targetbeneficiariesvalidate" class="md-nav__link">
+    targetBeneficiariesValidate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#targetbeneficiaryvalidate" class="md-nav__link">
+    targetBeneficiaryValidate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#targetlocationsvalidate" class="md-nav__link">
+    targetLocationsValidate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#targetlocationvalidate" class="md-nav__link">
+    targetLocationValidate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target_locations_valid" class="md-nav__link">
+    target_locations_valid()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validatepartial" class="md-nav__link">
+    validatePartial()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validationinputfromfile" class="md-nav__link">
+    validationInputFromFile()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validationstockinputfromfile" class="md-nav__link">
+    validationStockInputFromFile()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validationprojectdetailsfromfile" class="md-nav__link">
+    validatiOnprojectDetailsFromFile()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validate" class="md-nav__link">
+    validate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validatebeneficiaries" class="md-nav__link">
+    validateBeneficiaries()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmclusterbeneficiaries" class="md-nav__link">
+    ngmClusterBeneficiaries
+  </a>
+  
+    <nav class="md-nav" aria-label="ngmClusterBeneficiaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addbeneficiary" class="md-nav__link">
+    addBeneficiary()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setlocationsform" class="md-nav__link">
+    setLocationsForm()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setbeneficiariesform" class="md-nav__link">
+    setBeneficiariesForm()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setbeneficiariesinputs" class="md-nav__link">
+    setBeneficiariesInputs()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updatebeneficiaires" class="md-nav__link">
+    updateBeneficiaires()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beneficiaryformcomplete" class="md-nav__link">
+    beneficiaryFormComplete()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removebeneficiary" class="md-nav__link">
+    removeBeneficiary()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removetargetbeneficiary" class="md-nav__link">
+    removeTargetBeneficiary()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmclusterlists" class="md-nav__link">
+    ngmClusterLists
+  </a>
+  
+    <nav class="md-nav" aria-label="ngmClusterLists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setlists" class="md-nav__link">
+    setLists()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstocklists" class="md-nav__link">
+    getStockLists()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setclusterlists" class="md-nav__link">
+    setClusterLists()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setorganizationuserslist" class="md-nav__link">
+    setOrganizationUsersList()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getindicators" class="md-nav__link">
+    getIndicators()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getdeliverytypes" class="md-nav__link">
+    getDeliveryTypes()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmpcpurpose" class="md-nav__link">
+    getMpcPurpose()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmpcmechanismtypes" class="md-nav__link">
+    getMpcMechanismTypes()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getclusters" class="md-nav__link">
+    getClusters()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getactivities" class="md-nav__link">
+    getActivities()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filteractivedate" class="md-nav__link">
+    filterActiveDate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getprojectactivitytypes" class="md-nav__link">
+    getProjectActivityTypes()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getorganizations" class="md-nav__link">
+    getOrganizations()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getprojectclasifications" class="md-nav__link">
+    getProjectClasifications()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getdonors" class="md-nav__link">
+    getDonors()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcurrencies" class="md-nav__link">
+    getCurrencies()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstrategicobjectives" class="md-nav__link">
+    getStrategicObjectives()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcategorytypes" class="md-nav__link">
+    getCategoryTypes()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getunits" class="md-nav__link">
+    getUnits()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbeneficiaries" class="md-nav__link">
+    getBeneficiaries()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbeneficiariescategories" class="md-nav__link">
+    getBeneficiariesCategories()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsiteimplementation" class="md-nav__link">
+    getSiteImplementation()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsitetypes" class="md-nav__link">
+    getSiteTypes()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filterduplicates" class="md-nav__link">
+    filterDuplicates()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstocktargetedgroups" class="md-nav__link">
+    getStockTargetedGroups()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gethrpbeneficiaries" class="md-nav__link">
+    getHrpBeneficiaries()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getprojectdetails" class="md-nav__link">
+    getProjectDetails()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmclusterfinancial" class="md-nav__link">
+    ngmClusterFinancial
+  </a>
+  
+    <nav class="md-nav" aria-label="ngmClusterFinancial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validatebudgets" class="md-nav__link">
+    validateBudgets()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validatebudget" class="md-nav__link">
+    validateBudget()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inputchange" class="md-nav__link">
+    inputChange()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updatenumber" class="md-nav__link">
+    updateNumber()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmclusterlocations" class="md-nav__link">
+    ngmClusterLocations
+  </a>
+  
+    <nav class="md-nav" aria-label="ngmClusterLocations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opennewlocation" class="md-nav__link">
+    openNewLocation()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addnewlocation" class="md-nav__link">
+    addNewLocation()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addlocation" class="md-nav__link">
+    addLocation()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removelocation" class="md-nav__link">
+    removeLocation()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#showreporter" class="md-nav__link">
+    showReporter()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adminonchange" class="md-nav__link">
+    adminOnChange()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updatereporter" class="md-nav__link">
+    updateReporter()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updatesiteimplementation" class="md-nav__link">
+    updateSiteImplementation()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updatesitetype" class="md-nav__link">
+    updateSiteType()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updateadminsite" class="md-nav__link">
+    updateAdminSite()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updatelocation" class="md-nav__link">
+    updateLocation()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filterlocations" class="md-nav__link">
+    filterLocations()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resetlocations" class="md-nav__link">
+    resetLocations()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setlocationadminselect" class="md-nav__link">
+    setLocationAdminSelect()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setsitetypeandimplementationselect" class="md-nav__link">
+    setSiteTypeAndImplementationSelect()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../widgets/" class="md-nav__link">
+        Widgets
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layout/" class="md-nav__link">
+        Layout
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../filter/" class="md-nav__link">
+        Filter
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ngmuser" class="md-nav__link">
+    ngmUser
+  </a>
+  
+    <nav class="md-nav" aria-label="ngmUser">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    get()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set" class="md-nav__link">
+    set()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unset" class="md-nav__link">
+    unset()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasrole" class="md-nav__link">
+    hasRole()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasanyrole" class="md-nav__link">
+    hasAnyRole()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmauth" class="md-nav__link">
+    ngmAuth
+  </a>
+  
+    <nav class="md-nav" aria-label="ngmAuth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#register" class="md-nav__link">
+    register()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updateprofile" class="md-nav__link">
+    updateProfile()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#login" class="md-nav__link">
+    login()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passwordresetsend" class="md-nav__link">
+    passwordResetSend()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passwordreset" class="md-nav__link">
+    passwordReset()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logout" class="md-nav__link">
+    logout()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setsessiontimeout" class="md-nav__link">
+    setSessionTimeout()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grantpublicaccess" class="md-nav__link">
+    grantPublicAccess
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isanonymous" class="md-nav__link">
+    isAnonymous()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isauthenticated" class="md-nav__link">
+    isAuthenticated()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getuserroledescriptions" class="md-nav__link">
+    getUserRoleDescriptions()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#userpermissions" class="md-nav__link">
+    userPermissions()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cando" class="md-nav__link">
+    canDo()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getrouteparams" class="md-nav__link">
+    getRouteParams()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmenuparams" class="md-nav__link">
+    getMenuParams()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geteditableroles" class="md-nav__link">
+    getEditableRoles()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmpermissions" class="md-nav__link">
+    ngmPermissions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmclusterhelper" class="md-nav__link">
+    ngmClusterHelper
+  </a>
+  
+    <nav class="md-nav" aria-label="ngmClusterHelper">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setform" class="md-nav__link">
+    setForm()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getnewproject" class="md-nav__link">
+    getNewProject()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getprojecthrpcode" class="md-nav__link">
+    getProjectHrpCode()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getprojecthrpname" class="md-nav__link">
+    getProjectHrpName()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compileinterclusteractivities" class="md-nav__link">
+    compileInterClusterActivities()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compilestrategicobjectives" class="md-nav__link">
+    compileStrategicObjectives()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compilempcpurpose" class="md-nav__link">
+    compileMpcPurpose()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compileactivitytype" class="md-nav__link">
+    compileActivityType()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compiledonor" class="md-nav__link">
+    compileDonor()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcleanwarehouselocation" class="md-nav__link">
+    getCleanWarehouseLocation()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcleanstocks" class="md-nav__link">
+    getCleanStocks()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcleantargetlocation" class="md-nav__link">
+    getCleanTargetLocation()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcleanreport" class="md-nav__link">
+    getCleanReport()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcountrymenu" class="md-nav__link">
+    getCountryMenu()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getregionmenu" class="md-nav__link">
+    getRegionMenu()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cleancopyproject" class="md-nav__link">
+    cleanCopyProject()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmclustervalidation" class="md-nav__link">
+    ngmClusterValidation
+  </a>
+  
+    <nav class="md-nav" aria-label="ngmClusterValidation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#updateselect" class="md-nav__link">
+    updateSelect()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project_details_valid" class="md-nav__link">
+    project_details_valid()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projectdescription" class="md-nav__link">
+    projectDescription()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity_type_valid" class="md-nav__link">
+    activity_type_valid()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project_donor_valid" class="md-nav__link">
+    project_donor_valid()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#targetbeneficiariesvalidate" class="md-nav__link">
+    targetBeneficiariesValidate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#targetbeneficiaryvalidate" class="md-nav__link">
+    targetBeneficiaryValidate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#targetlocationsvalidate" class="md-nav__link">
+    targetLocationsValidate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#targetlocationvalidate" class="md-nav__link">
+    targetLocationValidate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target_locations_valid" class="md-nav__link">
+    target_locations_valid()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validatepartial" class="md-nav__link">
+    validatePartial()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validationinputfromfile" class="md-nav__link">
+    validationInputFromFile()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validationstockinputfromfile" class="md-nav__link">
+    validationStockInputFromFile()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validationprojectdetailsfromfile" class="md-nav__link">
+    validatiOnprojectDetailsFromFile()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validate" class="md-nav__link">
+    validate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validatebeneficiaries" class="md-nav__link">
+    validateBeneficiaries()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmclusterbeneficiaries" class="md-nav__link">
+    ngmClusterBeneficiaries
+  </a>
+  
+    <nav class="md-nav" aria-label="ngmClusterBeneficiaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addbeneficiary" class="md-nav__link">
+    addBeneficiary()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setlocationsform" class="md-nav__link">
+    setLocationsForm()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setbeneficiariesform" class="md-nav__link">
+    setBeneficiariesForm()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setbeneficiariesinputs" class="md-nav__link">
+    setBeneficiariesInputs()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updatebeneficiaires" class="md-nav__link">
+    updateBeneficiaires()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beneficiaryformcomplete" class="md-nav__link">
+    beneficiaryFormComplete()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removebeneficiary" class="md-nav__link">
+    removeBeneficiary()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removetargetbeneficiary" class="md-nav__link">
+    removeTargetBeneficiary()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmclusterlists" class="md-nav__link">
+    ngmClusterLists
+  </a>
+  
+    <nav class="md-nav" aria-label="ngmClusterLists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setlists" class="md-nav__link">
+    setLists()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstocklists" class="md-nav__link">
+    getStockLists()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setclusterlists" class="md-nav__link">
+    setClusterLists()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setorganizationuserslist" class="md-nav__link">
+    setOrganizationUsersList()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getindicators" class="md-nav__link">
+    getIndicators()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getdeliverytypes" class="md-nav__link">
+    getDeliveryTypes()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmpcpurpose" class="md-nav__link">
+    getMpcPurpose()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmpcmechanismtypes" class="md-nav__link">
+    getMpcMechanismTypes()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getclusters" class="md-nav__link">
+    getClusters()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getactivities" class="md-nav__link">
+    getActivities()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filteractivedate" class="md-nav__link">
+    filterActiveDate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getprojectactivitytypes" class="md-nav__link">
+    getProjectActivityTypes()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getorganizations" class="md-nav__link">
+    getOrganizations()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getprojectclasifications" class="md-nav__link">
+    getProjectClasifications()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getdonors" class="md-nav__link">
+    getDonors()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcurrencies" class="md-nav__link">
+    getCurrencies()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstrategicobjectives" class="md-nav__link">
+    getStrategicObjectives()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcategorytypes" class="md-nav__link">
+    getCategoryTypes()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getunits" class="md-nav__link">
+    getUnits()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbeneficiaries" class="md-nav__link">
+    getBeneficiaries()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbeneficiariescategories" class="md-nav__link">
+    getBeneficiariesCategories()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsiteimplementation" class="md-nav__link">
+    getSiteImplementation()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsitetypes" class="md-nav__link">
+    getSiteTypes()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filterduplicates" class="md-nav__link">
+    filterDuplicates()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstocktargetedgroups" class="md-nav__link">
+    getStockTargetedGroups()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gethrpbeneficiaries" class="md-nav__link">
+    getHrpBeneficiaries()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getprojectdetails" class="md-nav__link">
+    getProjectDetails()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmclusterfinancial" class="md-nav__link">
+    ngmClusterFinancial
+  </a>
+  
+    <nav class="md-nav" aria-label="ngmClusterFinancial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validatebudgets" class="md-nav__link">
+    validateBudgets()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validatebudget" class="md-nav__link">
+    validateBudget()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inputchange" class="md-nav__link">
+    inputChange()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updatenumber" class="md-nav__link">
+    updateNumber()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmclusterlocations" class="md-nav__link">
+    ngmClusterLocations
+  </a>
+  
+    <nav class="md-nav" aria-label="ngmClusterLocations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opennewlocation" class="md-nav__link">
+    openNewLocation()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addnewlocation" class="md-nav__link">
+    addNewLocation()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addlocation" class="md-nav__link">
+    addLocation()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removelocation" class="md-nav__link">
+    removeLocation()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#showreporter" class="md-nav__link">
+    showReporter()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adminonchange" class="md-nav__link">
+    adminOnChange()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updatereporter" class="md-nav__link">
+    updateReporter()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updatesiteimplementation" class="md-nav__link">
+    updateSiteImplementation()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updatesitetype" class="md-nav__link">
+    updateSiteType()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updateadminsite" class="md-nav__link">
+    updateAdminSite()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updatelocation" class="md-nav__link">
+    updateLocation()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filterlocations" class="md-nav__link">
+    filterLocations()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resetlocations" class="md-nav__link">
+    resetLocations()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setlocationadminselect" class="md-nav__link">
+    setLocationAdminSelect()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setsitetypeandimplementationselect" class="md-nav__link">
+    setSiteTypeAndImplementationSelect()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+  <h1>Services</h1>
+
+<h2 id="ngmuser"><strong>ngmUser</strong></h2>
+<h3 id="get">get()</h3>
+<blockquote>
+<p>use       : ngmUser<br />
+purpose   : to get user from storage  </p>
+</blockquote>
+<h3 id="set">set()</h3>
+<blockquote>
+<p>use       : ngmUser<br />
+purpose   : to set user to storage  </p>
+</blockquote>
+<h3 id="unset">unset()</h3>
+<blockquote>
+<p>use       : ngmUser<br />
+purpose   : to unset from storage  </p>
+</blockquote>
+<h3 id="hasrole">hasRole()</h3>
+<blockquote>
+<p>use       : ngmUser<br />
+purpose   : to check user role  </p>
+</blockquote>
+<h3 id="hasanyrole">hasAnyRole()</h3>
+<blockquote>
+<p>use       : ngmUser<br />
+purpose   : to match any role  </p>
+</blockquote>
+<h2 id="ngmauth"><strong>ngmAuth</strong></h2>
+<h3 id="register">register()</h3>
+<blockquote>
+<p>use       :   ngmAuth
+purpose   :   to register new user in ReportHub</p>
+</blockquote>
+<h3 id="updateprofile">updateProfile()</h3>
+<blockquote>
+<p>use       :   ngmAuth
+purpose   :   to update user information</p>
+</blockquote>
+<h3 id="login">login()</h3>
+<blockquote>
+<p>use       :   ngmAuth
+purpose   :   to login in Reporthub</p>
+</blockquote>
+<h3 id="passwordresetsend">passwordResetSend()</h3>
+<blockquote>
+<p>use       :   ngmAuth
+purpose   :   to send request to reset password</p>
+</blockquote>
+<h3 id="passwordreset">passwordReset()</h3>
+<blockquote>
+<p>use       :   ngmAuth
+purpose   :   to reset password</p>
+</blockquote>
+<h3 id="logout">logout()</h3>
+<blockquote>
+<p>use       :   ngmAuth
+purpose   :   to logout from ReportHub</p>
+</blockquote>
+<h3 id="setsessiontimeout">setSessionTimeout()</h3>
+<blockquote>
+<p>use       :   ngmAuth
+purpose   :   to manage user session timeout</p>
+</blockquote>
+<h3 id="grantpublicaccess">grantPublicAccess</h3>
+<blockquote>
+<p>use       :   ngmAuth
+purpose   :   to setup a public user  </p>
+</blockquote>
+<h3 id="isanonymous">isAnonymous()</h3>
+<blockquote>
+<p>use       :   ngmAuth
+purpose   :   to check if user is anonymus or not</p>
+</blockquote>
+<h3 id="isauthenticated">isAuthenticated()</h3>
+<blockquote>
+<p>use       :   ngmAuth
+purpose   :  to check if user is login or not</p>
+</blockquote>
+<h3 id="getuserroledescriptions">getUserRoleDescriptions()</h3>
+<blockquote>
+<p>use       :   ngmAuth
+purpose   :   to get user role description</p>
+</blockquote>
+<h3 id="userpermissions">userPermissions()</h3>
+<blockquote>
+<p>use       :   ngmAuth
+purpose   :   to get user permissions definitions</p>
+</blockquote>
+<h3 id="cando">canDo()</h3>
+<blockquote>
+<p>use       :   ngmAuth
+purpose   :   to checks if user can edit in input view zones</p>
+</blockquote>
+<h3 id="getrouteparams">getRouteParams()</h3>
+<blockquote>
+<p>use       :   ngmAuth
+purpose   :   to get user route restiction params</p>
+</blockquote>
+<h3 id="getmenuparams">getMenuParams()</h3>
+<blockquote>
+<p>use       :   ngmAuth
+purpose   :   to get user user menu params</p>
+</blockquote>
+<h3 id="geteditableroles">getEditableRoles()</h3>
+<blockquote>
+<p>use       :   ngmAuth
+purpose   :   to get user's allowed roles to edit on users  </p>
+</blockquote>
+<h2 id="ngmpermissions"><strong>ngmPermissions</strong></h2>
+<blockquote>
+<p>In ngmPermissions contain a list of a role to assign user-level access </p>
+</blockquote>
+<h2 id="ngmclusterhelper"><strong>ngmClusterHelper</strong></h2>
+<h3 id="setform">setForm()</h3>
+<blockquote>
+<p>use        : ClusterProjectFormDetailsCtrl (Page Project Detail ).<br />
+purpose    :  to add some addional list and some check list based on project information</p>
+</blockquote>
+<h3 id="getnewproject">getNewProject()</h3>
+<blockquote>
+<p>use       : ClusterProjectDetailsCtrl (Page Project Detail ). <br />
+purpose   : to set new project </p>
+</blockquote>
+<h3 id="getprojecthrpcode">getProjectHrpCode()</h3>
+<blockquote>
+<p>use       : ngmClusterHelper.getNewProject().  <br />
+purpose   : to set HRP code for new project based on project admin0pcode or country</p>
+</blockquote>
+<h3 id="getprojecthrpname">getProjectHrpName()</h3>
+<blockquote>
+<p>use       : ClusterProjectFormDetailsCtrl (Page Project Detail ) <br />
+purpose   : to set HRP code for project based on project admin0pcode or country</p>
+</blockquote>
+<h3 id="compileinterclusteractivities">compileInterClusterActivities()</h3>
+<blockquote>
+<p>use       : ClusterProjectFormDetailsCtrl (Page Project Detail ) <br />
+purpose   : to compile all inter cluster activities selected by user </p>
+</blockquote>
+<h3 id="compilestrategicobjectives">compileStrategicObjectives()</h3>
+<blockquote>
+<p>use       : ClusterProjectFormDetailsCtrl (Page Project Detail ) <br />
+purpose   : to compile all stragetic objective selected by user</p>
+</blockquote>
+<h3 id="compilempcpurpose">compileMpcPurpose()</h3>
+<blockquote>
+<p>use       : ClusterProjectFormDetailsCtrl (Page Project Detail ) <br />
+purpose   : to compile all mpc cash purpose  selected by user</p>
+</blockquote>
+<h3 id="compileactivitytype">compileActivityType()</h3>
+<blockquote>
+<p>use       : ClusterProjectFormDetailsCtrl (Page Project Detail ) <br />
+purpose   : to compile all activity type  selected by user</p>
+</blockquote>
+<h3 id="compiledonor">compileDonor()</h3>
+<blockquote>
+<p>use       : ClusterProjectFormDetailsCtrl (Page Project Detail ) <br />
+purpose   : to compile all donor  selected by user</p>
+</blockquote>
+<h3 id="getcleanwarehouselocation">getCleanWarehouseLocation()</h3>
+<blockquote>
+<p>use       : ClusterOrganizationStocksFormList (page Stocks) <br />
+purpose   : to set attribute for location warehouse form and delete unused atrribute/data.</p>
+</blockquote>
+<h3 id="getcleanstocks">getCleanStocks()</h3>
+<blockquote>
+<p>use       : ClusterOrganizationStockForm (page Stock Report) <br />
+purpose   : to  delete unused atrribute/data when add new stock report.</p>
+</blockquote>
+<h3 id="getcleantargetlocation">getCleanTargetLocation()</h3>
+<blockquote>
+<p>use       : ClusterProjectFormDetailsCtrl (Page Project Detail ) <br />
+purpose   : to  set site_id ,site_lng and site_lat of target location attribute based on level location.</p>
+</blockquote>
+<h3 id="getcleanreport">getCleanReport()</h3>
+<blockquote>
+<p>use       : ClusterProjectFormReportCtrl (Page Monthly Report ) <br />
+purpose   : to update entire report  locations attribute ("site_id" ,"site_lng" and "site_lat" ) and beneficiary ("report_status")</p>
+</blockquote>
+<h3 id="getcountrymenu">getCountryMenu()</h3>
+<blockquote>
+<p>use       : ClusterProjectProjectsCtrl (Page Project List)<br />
+purpose   : provide list of country for menu  in project list page</p>
+</blockquote>
+<h3 id="getregionmenu">getRegionMenu()</h3>
+<blockquote>
+<p>use       : ClusterProjectProjectsCtrl (Page Project List)<br />
+purpose   : provide list of region for menu  in project list page</p>
+</blockquote>
+<h3 id="cleancopyproject">cleanCopyProject()</h3>
+<blockquote>
+<p>use       : ClusterProjectFormDetailsCtrl (Page Project Detail ) <br />
+purpose   : to  remove unused attribute from copied project. the attribute that remove is project "id", "updatedAt","createdAt",<br />
+            "project_end_date","project_start_date","project_status" target location and target beneficiary "id",    "project_id" </p>
+</blockquote>
+<h2 id="ngmclustervalidation"><strong>ngmClusterValidation</strong></h2>
+<h3 id="updateselect">updateSelect()</h3>
+<blockquote>
+<p>use       : ClusterOrganizationStocksFormList (Page Stocks)<br />
+purpose   : to update <select></select>  in DOM</p>
+</blockquote>
+<h3 id="project_details_valid">project_details_valid()</h3>
+<blockquote>
+<p>use       : ClusterProjectFormDetailsCtrl, ngmClusterValidation <br />
+purpose   : to validate form Project Plan</p>
+</blockquote>
+<h3 id="projectdescription">projectDescription()</h3>
+<blockquote>
+<p>use       :  ngmClusterValidation <br />
+purpose   : to validate field Project Description in form Project Plan</p>
+</blockquote>
+<h3 id="activity_type_valid">activity_type_valid()</h3>
+<blockquote>
+<p>use       : ClusterProjectFormDetailsCtrl, ngmClusterValidation <br />
+purpose   : to check if user select the activity type or not</p>
+</blockquote>
+<h3 id="project_donor_valid">project_donor_valid()</h3>
+<blockquote>
+<p>use       : ClusterProjectFormDetailsCtrl, ngmClusterValidation <br />
+purpose   : to check if user select donor or not</p>
+</blockquote>
+<h3 id="targetbeneficiariesvalidate">targetBeneficiariesValidate()</h3>
+<blockquote>
+<p>use       : ClusterProjectFormDetailsCtrl, ngmClusterValidation <br />
+purpose   : to validate Target Beneficiary Form</p>
+</blockquote>
+<h3 id="targetbeneficiaryvalidate">targetBeneficiaryValidate()</h3>
+<blockquote>
+<p>use       : ngmClusterValidation <br />
+purpose   : to help <strong>targetBeneficiariesValidate</strong> function to check every attribute in target beneficiary</p>
+</blockquote>
+<h3 id="targetlocationsvalidate">targetLocationsValidate()</h3>
+<blockquote>
+<p>use       : ClusterProjectFormDetailsCtrl, ngmClusterValidation
+purpose   : to validate Target Location Form for new form</p>
+</blockquote>
+<h3 id="targetlocationvalidate">targetLocationValidate()</h3>
+<blockquote>
+<p>use       : ngmClusterValidation
+purpose   : to help <strong>targetLocationsValidate</strong> function to check every attribue in target location</p>
+</blockquote>
+<h3 id="target_locations_valid">target_locations_valid()</h3>
+<blockquote>
+<p>use       : ClusterProjectFormDetailsCtrl, ngmClusterValidation
+purpose   : to validate Target Location Form for old form</p>
+</blockquote>
+<h3 id="validatepartial">validatePartial()</h3>
+<blockquote>
+<p>use       : ClusterProjectFormDetailsCtrl, ngmClusterValidation
+purpose   : to validate Target Location Form for old form</p>
+</blockquote>
+<h3 id="validationinputfromfile">validationInputFromFile()</h3>
+<blockquote>
+<p>use       : ClusterProjectFormReportCtrl
+purpose   : to validate beneficiary from  upload file</p>
+</blockquote>
+<h3 id="validationstockinputfromfile">validationStockInputFromFile()</h3>
+<blockquote>
+<p>use       : ClusterOrganizationStockForm
+purpose   : to validate stock from  upload file</p>
+</blockquote>
+<h3 id="validationprojectdetailsfromfile">validatiOnprojectDetailsFromFile()</h3>
+<blockquote>
+<p>use       : ClusterOrganizationStockForm
+purpose   : to validate Project Detail from  upload file</p>
+</blockquote>
+<h3 id="validate">validate()</h3>
+<blockquote>
+<p>use        : clusterProjectFormDetailsCtrl, ngmClusterValidation
+purpose    : to validate all form in Project Plan/Detail page</p>
+</blockquote>
+<h3 id="validatebeneficiaries">validateBeneficiaries()</h3>
+<blockquote>
+<p>use        : ngmClusterValidation, ClusterProjectFormReportCtrl
+purpose    : to validate beneficiaries in monthly report</p>
+</blockquote>
+<h2 id="ngmclusterbeneficiaries"><strong>ngmClusterBeneficiaries</strong></h2>
+<h3 id="addbeneficiary">addBeneficiary()</h3>
+<blockquote>
+<p>use        : ngmClusterBeneficiaries,ClusterProjectFormReportCtrl,ClusterProjectFormDetailsCtrl
+purpose    : to set initial property/atribute for beneficiary or target beneficiary form.</p>
+</blockquote>
+<h3 id="setlocationsform">setLocationsForm()</h3>
+<blockquote>
+<p>use        : ngmClusterBeneficiaries,ClusterProjectFormReportCtrl,ClusterProjectFormDetailsCtrl
+purpose    : set beneficiary form for each location in monthly report using setBeneficiariesForm</p>
+</blockquote>
+<h3 id="setbeneficiariesform">setBeneficiariesForm()</h3>
+<blockquote>
+<p>use        : ngmClusterBeneficiaries,ClusterProjectFormReportCtrl,ClusterProjectFormDetailsCtrl
+purpose    : to set beneficiary form using setBeneficiariesInputs function</p>
+</blockquote>
+<h3 id="setbeneficiariesinputs">setBeneficiariesInputs()</h3>
+<blockquote>
+<p>use        : ngmClusterBeneficiaries,ClusterProjectFormReportCtrl,ClusterProjectFormDetailsCtrl
+purpose    : to set form for beneficiary form and select which field should show in form based on config.</p>
+</blockquote>
+<h3 id="updatebeneficiaires">updateBeneficiaires()</h3>
+<blockquote>
+<p>use        : ngmClusterBeneficiaries,ClusterProjectFormReportCtrl,ClusterProjectFormDetailsCtrl
+purpose    : to update value attribute of beneficiary (<code>total_male</code>,<code>total_female</code> and <code>total_beneficiaries</code>)</p>
+</blockquote>
+<h3 id="beneficiaryformcomplete">beneficiaryFormComplete()</h3>
+<blockquote>
+<p>use        : ngmClusterBeneficiaries,ClusterProjectFormReportCtrl
+purpose    : to validate old form beneficiary in monthly report</p>
+</blockquote>
+<h3 id="removebeneficiary">removeBeneficiary()</h3>
+<blockquote>
+<p>use        : ngmClusterBeneficiaries,ClusterProjectFormReportCtrl
+purpose    : to remove beneficiary in monthly report</p>
+</blockquote>
+<h3 id="removetargetbeneficiary">removeTargetBeneficiary()</h3>
+<blockquote>
+<p>use        : ngmClusterBeneficiaries,ClusterProjectFormDetailsCtrl
+purpose    : to remove beneficiary in project plan/detail</p>
+</blockquote>
+<h2 id="ngmclusterlists"><strong>ngmClusterLists</strong></h2>
+<h3 id="setlists">setLists()</h3>
+<blockquote>
+<p>use        : ngmClusterBeneficiaries,ClusterProjectFormReportCtrl,ClusterProjectFormDetailsCtrl
+purpose    : to return lists </p>
+</blockquote>
+<h3 id="getstocklists">getStockLists()</h3>
+<blockquote>
+<p>use        : ClusterOrganizationStockForm, ClusterUploadBeneficiariesStockCtrl, ngmClusterDownloads, ngmClusterLists
+purpose    : to provide lists for stock </p>
+</blockquote>
+<h3 id="setclusterlists">setClusterLists()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : get list for cluster reporting from API</p>
+</blockquote>
+<h3 id="setorganizationuserslist">setOrganizationUsersList()</h3>
+<blockquote>
+<p>use        : ClusterProjectFormReportCtrl, ClusterProjectFormDetailsCtrl, ngmClusterLists
+purpose    : to get information about organization list user</p>
+</blockquote>
+<h3 id="getindicators">getIndicators()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to provide indicator list for monthly report</p>
+</blockquote>
+<h3 id="getdeliverytypes">getDeliveryTypes()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to provide delivery type list for beneficiary</p>
+</blockquote>
+<h3 id="getmpcpurpose">getMpcPurpose()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to provide mpc purpose type list for beneficiary</p>
+</blockquote>
+<h3 id="getmpcmechanismtypes">getMpcMechanismTypes()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to provide mechanism type list for beneficiary</p>
+</blockquote>
+<h3 id="getclusters">getClusters()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to provide cluster list</p>
+</blockquote>
+<h3 id="getactivities">getActivities()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to provide activities use in project plan/detail</p>
+</blockquote>
+<h3 id="filteractivedate">filterActiveDate()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to filter activities list by start and date of activity</p>
+</blockquote>
+<h3 id="getprojectactivitytypes">getProjectActivityTypes()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to provide activity type list in project plan/detail</p>
+</blockquote>
+<h3 id="getorganizations">getOrganizations()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    :to provide organization list</p>
+</blockquote>
+<h3 id="getprojectclasifications">getProjectClasifications()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to provide project clasification list</p>
+</blockquote>
+<h3 id="getdonors">getDonors()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to provide donor list</p>
+</blockquote>
+<h3 id="getcurrencies">getCurrencies()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to providw currencies list</p>
+</blockquote>
+<h3 id="getstrategicobjectives">getStrategicObjectives()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to provide strategic objective list</p>
+</blockquote>
+<h3 id="getcategorytypes">getCategoryTypes()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to provide category type list for</p>
+</blockquote>
+<h3 id="getunits">getUnits()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to provide unit list</p>
+</blockquote>
+<h3 id="getbeneficiaries">getBeneficiaries()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to provide beneficiary type list</p>
+</blockquote>
+<h3 id="getbeneficiariescategories">getBeneficiariesCategories()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to provide beneficiary category list</p>
+</blockquote>
+<h3 id="getsiteimplementation">getSiteImplementation()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to provide site implementation list for location</p>
+</blockquote>
+<h3 id="getsitetypes">getSiteTypes()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to provide site type list for location</p>
+</blockquote>
+<h3 id="filterduplicates">filterDuplicates()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to remove duplicate object in list</p>
+</blockquote>
+<h3 id="getstocktargetedgroups">getStockTargetedGroups()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to provide stock targeted list for stock</p>
+</blockquote>
+<h3 id="gethrpbeneficiaries">getHrpBeneficiaries()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to provide hrp beneficiary type list for beneficary</p>
+</blockquote>
+<h3 id="getprojectdetails">getProjectDetails()</h3>
+<blockquote>
+<p>use        : ngmClusterLists
+purpose    : to provide project details list</p>
+</blockquote>
+<h2 id="ngmclusterfinancial"><strong>ngmClusterFinancial</strong></h2>
+<h3 id="validatebudgets">validateBudgets()</h3>
+<blockquote>
+<p>use        : ClusterProjectFormFinancialCtrl<br />
+purpose    : to validate budget form in financial form using validateBudget  </p>
+</blockquote>
+<h3 id="validatebudget">validateBudget()</h3>
+<blockquote>
+<p>use        : ngmCLusterFinancial<br />
+purpose   : to validate each attribute in budget form   </p>
+</blockquote>
+<h3 id="inputchange">inputChange()</h3>
+<blockquote>
+<p>use        : ngmCLusterFinancial <br />
+purpose    : to change label back to normal if the label is added  error class  </p>
+</blockquote>
+<h3 id="updatenumber">updateNumber()</h3>
+<blockquote>
+<p>use        : ngmCLusterFinancial 
+purpose    : to update certain attribute in budget form.  </p>
+</blockquote>
+<h2 id="ngmclusterlocations"><strong>ngmClusterLocations</strong></h2>
+<h3 id="opennewlocation">openNewLocation()</h3>
+<blockquote>
+<p>use        : ngmClusterLocations<br />
+purpose    : to open location form  and set attribute (using addLocation function) in monthly report page  </p>
+</blockquote>
+<h3 id="addnewlocation">addNewLocation()</h3>
+<blockquote>
+<p>use        : ngmClusterLocations<br />
+purpose    : to add new location  in monthly report page  </p>
+</blockquote>
+<h3 id="addlocation">addLocation()</h3>
+<blockquote>
+<p>use        : ngmClusterLocations, ClusterProjectFormDetailsCtrl<br />
+purpose    : to set attribute for location form    </p>
+</blockquote>
+<h3 id="removelocation">removeLocation()</h3>
+<blockquote>
+<p>use        : ngmClusterLocations<br />
+purpose    : to remove location in target location  in project detail/plan    </p>
+</blockquote>
+<h3 id="showreporter">showReporter()</h3>
+<blockquote>
+<p>use        : ngmClusterLocations,ngmClusterLocations, ClusterProjectFormDetailsCtrl<br />
+purpose    : to show list of user that make a report  </p>
+</blockquote>
+<h3 id="adminonchange">adminOnChange()</h3>
+<blockquote>
+<p>use        : ClusterProjectFormReportCtrl<br />
+purpose    : to change list if admin1, admin2 or admin3 is changing  </p>
+</blockquote>
+<h3 id="updatereporter">updateReporter()</h3>
+<blockquote>
+<p>use        : ngmClusterLocations,ngmClusterLocations, ClusterProjectFormDetailsCtrl<br />
+purpose    : to update reporter(list of user that make a report)  </p>
+</blockquote>
+<h3 id="updatesiteimplementation">updateSiteImplementation()</h3>
+<blockquote>
+<p>use        : ngmClusterLocations<br />
+purpose    : to update site implementation list in location form  </p>
+</blockquote>
+<h3 id="updatesitetype">updateSiteType()</h3>
+<blockquote>
+<p>use        : ngmClusterLocations<br />
+purpose    : to update site type list in location form  </p>
+</blockquote>
+<h3 id="updateadminsite">updateAdminSite()</h3>
+<blockquote>
+<p>use        : ngmClusterLocations<br />
+purpose    : to update site name list in location form  </p>
+</blockquote>
+<h3 id="updatelocation">updateLocation()</h3>
+<blockquote>
+<p>use        : ngmClusterLocations<br />
+purpose    : to update location   </p>
+</blockquote>
+<h3 id="filterlocations">filterLocations()</h3>
+<blockquote>
+<p>use        : ngmClusterLocations, ClusterProjectFormDetailsCtrl<br />
+purpose    : to filter Location admin 1,admin2,admin3,admin4,admin5 and adminsite list  </p>
+</blockquote>
+<h3 id="resetlocations">resetLocations()</h3>
+<blockquote>
+<p>use        : ngmClusterLocations<br />
+purpose    : to reset location property/attribute  </p>
+</blockquote>
+<h3 id="setlocationadminselect">setLocationAdminSelect()</h3>
+<blockquote>
+<p>use        : ngmClusterLocations, ClusterProjectFormDetailsCtrl<br />
+purpose    : to set list Location admin1,admin2,admin3 in location form  </p>
+</blockquote>
+<h3 id="setsitetypeandimplementationselect">setSiteTypeAndImplementationSelect()</h3>
+<blockquote>
+<p>use        : ngmClusterLocations, ClusterProjectFormDetailsCtrl<br />
+purpose    : to set list of site_type &amp;&amp; site_implementation in location form</p>
+</blockquote>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../module/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Modules" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Modules
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../widgets/" class="md-footer__link md-footer__link--next" aria-label="Next: Widgets" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Widgets
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.361d90f1.min.js"}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.289a2a4b.min.js"></script>
+      
+    
+  </body>
+</html>

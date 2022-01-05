@@ -1,0 +1,1111 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.4">
+    
+    
+      
+        <title>Modules - ReportHub Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bb3983ee.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#reporthub-main-module" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ReportHub Docs" class="md-header__button md-logo" aria-label="ReportHub Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ReportHub Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Modules
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ReportHub Docs" class="md-nav__button md-logo" aria-label="ReportHub Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    ReportHub Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../start/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Modules
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Modules
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reporthub-main-module" class="md-nav__link">
+    ReportHub Main Module
+  </a>
+  
+    <nav class="md-nav" aria-label="ReportHub Main Module">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-module" class="md-nav__link">
+    Custom Module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-module-for-country" class="md-nav__link">
+    Custom Module for Country
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-module-for-cluster" class="md-nav__link">
+    Custom Module for Cluster
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-module-for-project" class="md-nav__link">
+    Custom Module for Project
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cluster-module" class="md-nav__link">
+    Cluster Module
+  </a>
+  
+    <nav class="md-nav" aria-label="Cluster Module">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reports" class="md-nav__link">
+    Reports
+  </a>
+  
+    <nav class="md-nav" aria-label="Reports">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-project-plandetail" class="md-nav__link">
+    1. Project Plan/Detail
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-clusterprojectdetailsctrl" class="md-nav__link">
+    1.1 ClusterProjectDetailsCtrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-clusterprojectformdetailsctrl" class="md-nav__link">
+    1.2 ClusterProjectFormDetailsCtrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-financial" class="md-nav__link">
+    2. Financial
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-clusterprojectfinancialsctrl" class="md-nav__link">
+    2.1 ClusterProjectFinancialsCtrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-clusterprojectformfinancialctrl" class="md-nav__link">
+    2.2 ClusterProjectFormFinancialCtrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-monthly-report" class="md-nav__link">
+    3. Monthly Report
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#31-clusterprojectreportslistctrl" class="md-nav__link">
+    3.1 ClusterProjectReportsListCtrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-clusterprojectreportctrl" class="md-nav__link">
+    3.2 ClusterProjectReportCtrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-clusterprojectformreportctrl" class="md-nav__link">
+    3.3 ClusterProjectFormReportCtrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-stock-report" class="md-nav__link">
+    4. Stock Report
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#41-clusterorganizationstockslistctrl" class="md-nav__link">
+    4.1 ClusterOrganizationStocksListCtrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-clusterorganizationstocksformlist" class="md-nav__link">
+    4.2 ClusterOrganizationStocksFormList
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-clusterorganizationstockreportctrl" class="md-nav__link">
+    4.3 ClusterOrganizationStockReportCtrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-clusterorganizationstockform" class="md-nav__link">
+    4.4 ClusterOrganizationStockForm
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-module" class="md-nav__link">
+    Authentication Module
+  </a>
+  
+    <nav class="md-nav" aria-label="Authentication Module">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-sign-in-register" class="md-nav__link">
+    1. Sign In / Register
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-log-in" class="md-nav__link">
+    2. Log In
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-log-out" class="md-nav__link">
+    3. Log Out
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-update-profile" class="md-nav__link">
+    4. Update Profile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-delete-user" class="md-nav__link">
+    5. Delete User
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-reset-password" class="md-nav__link">
+    6. Reset Password
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-manage-user-access" class="md-nav__link">
+    7. Manage User Access
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/" class="md-nav__link">
+        Services
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../widgets/" class="md-nav__link">
+        Widgets
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layout/" class="md-nav__link">
+        Layout
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../filter/" class="md-nav__link">
+        Filter
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reporthub-main-module" class="md-nav__link">
+    ReportHub Main Module
+  </a>
+  
+    <nav class="md-nav" aria-label="ReportHub Main Module">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-module" class="md-nav__link">
+    Custom Module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-module-for-country" class="md-nav__link">
+    Custom Module for Country
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-module-for-cluster" class="md-nav__link">
+    Custom Module for Cluster
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-module-for-project" class="md-nav__link">
+    Custom Module for Project
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cluster-module" class="md-nav__link">
+    Cluster Module
+  </a>
+  
+    <nav class="md-nav" aria-label="Cluster Module">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reports" class="md-nav__link">
+    Reports
+  </a>
+  
+    <nav class="md-nav" aria-label="Reports">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-project-plandetail" class="md-nav__link">
+    1. Project Plan/Detail
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-clusterprojectdetailsctrl" class="md-nav__link">
+    1.1 ClusterProjectDetailsCtrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-clusterprojectformdetailsctrl" class="md-nav__link">
+    1.2 ClusterProjectFormDetailsCtrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-financial" class="md-nav__link">
+    2. Financial
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-clusterprojectfinancialsctrl" class="md-nav__link">
+    2.1 ClusterProjectFinancialsCtrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-clusterprojectformfinancialctrl" class="md-nav__link">
+    2.2 ClusterProjectFormFinancialCtrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-monthly-report" class="md-nav__link">
+    3. Monthly Report
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#31-clusterprojectreportslistctrl" class="md-nav__link">
+    3.1 ClusterProjectReportsListCtrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-clusterprojectreportctrl" class="md-nav__link">
+    3.2 ClusterProjectReportCtrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-clusterprojectformreportctrl" class="md-nav__link">
+    3.3 ClusterProjectFormReportCtrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-stock-report" class="md-nav__link">
+    4. Stock Report
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#41-clusterorganizationstockslistctrl" class="md-nav__link">
+    4.1 ClusterOrganizationStocksListCtrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-clusterorganizationstocksformlist" class="md-nav__link">
+    4.2 ClusterOrganizationStocksFormList
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-clusterorganizationstockreportctrl" class="md-nav__link">
+    4.3 ClusterOrganizationStockReportCtrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-clusterorganizationstockform" class="md-nav__link">
+    4.4 ClusterOrganizationStockForm
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-module" class="md-nav__link">
+    Authentication Module
+  </a>
+  
+    <nav class="md-nav" aria-label="Authentication Module">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-sign-in-register" class="md-nav__link">
+    1. Sign In / Register
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-log-in" class="md-nav__link">
+    2. Log In
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-log-out" class="md-nav__link">
+    3. Log Out
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-update-profile" class="md-nav__link">
+    4. Update Profile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-delete-user" class="md-nav__link">
+    5. Delete User
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-reset-password" class="md-nav__link">
+    6. Reset Password
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-manage-user-access" class="md-nav__link">
+    7. Manage User Access
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+  <h1>Modules</h1>
+
+<h2 id="reporthub-main-module">ReportHub Main Module</h2>
+<p><img alt="title" src="../img/main-diagram.png" /></p>
+<p>ReportHub build using many third party library like on diagram above.  </p>
+<h3 id="_1"></h3>
+<p>Reference Third Party Library :  </p>
+<ul>
+<li><strong>ngRaven</strong> : <a href="https://raven-js.readthedocs.io/en/stable/integrations/angular.html" title="Title">raven-js</a></li>
+<li><strong>pascalprecth.translate</strong> : <a href="https://angular-translate.github.io/docs/#/guide" title="Title">angular-translate</a></li>
+<li><strong>ngAnimate</strong> : <a href="https://docs.angularjs.org/api/ngAnimate">angular-animate</a></li>
+<li><strong>ngCookies</strong> : <a href="https://docs.angularjs.org/api/ngCookies">angular-cookies</a></li>
+<li><strong>ngResource</strong>: <a href="https://docs.angularjs.org/api/ngResource">angular-resource</a></li>
+<li><strong>ngRoute</strong>   : <a href="https://docs.angularjs.org/api/ngRoute">angular-route</a></li>
+<li><strong>ngSanitize</strong>: <a href="https://docs.angularjs.org/api/ngSanitize">angular-sanitize</a></li>
+<li><strong>ngTouch</strong>: <a href="https://docs.angularjs.org/api/ngTouch">angular-touch</a></li>
+<li><strong>ngTable</strong>: <a href="https://esvit.github.io/ng-table/api-docs/index.html">ng-table</a></li>
+<li><strong>ngCsv</strong>: <a href="https://github.com/asafdav/ng-csv">ng-csv</a></li>
+<li><strong>ngDropzone</strong>: <a href="https://github.com/thatisuday/ng-dropzone">ng-dropzone</a></li>
+<li><strong>ngCountTo</strong>: <a href="https://github.com/pfitzpaddy/angular-filter-count-to">ng-count-to</a></li>
+<li><strong>ngAria</strong>: <a href="https://docs.angularjs.org/api/ngAria">angular-aria</a></li>
+<li><strong>ngMaterial</strong>: <a href="https://material.angularjs.org/1.1.0/getting-started">angular material</a></li>
+<li><strong>highcharts-ng</strong>: <a href="https://github.com/pablojim/highcharts-ng">highcharts</a></li>
+<li><strong>leaflet-directive</strong>: <a href="https://tombatossals.github.io/angular-leaflet-directive/#!/">leaflet</a></li>
+<li><strong>xeditable</strong>: <a href="https://vitalets.github.io/angular-xeditable/">angular-xeditable</a></li>
+<li><strong>infinite-scroll</strong>: <a href="https://sroze.github.io/ngInfiniteScroll/">ng-infinite-scroll</a></li>
+<li><strong>angularUtils.directives.dirPagination</strong>: <a href="https://github.com/michaelbromley/angularUtils/tree/master/src/directives/pagination">pagination directive</a></li>
+</ul>
+<p>For the custom module is module made by reporthub team to provide specific function in Reporthub.  </p>
+<h3 id="custom-module">Custom Module</h3>
+<ul>
+<li><strong>ngm.widget.form.authentication</strong></li>
+<li><a href="/module/#12-clusterprojectformdetailsctrl"><strong>ngm.widget.project.details</strong></a></li>
+<li><a href="/module/#21-clusterprojectfinancialsctrl"><strong>ngm.widget.project.financials</strong></a></li>
+<li><a href="/module/#3-monthly-report"><strong>ngm.widget.project.report</strong></a></li>
+<li><a href="/module/#41-clusterorganizationstockslistctrl"><strong>ngm.widget.organization.stocks.list</strong></a></li>
+<li><a href="/module/#43-clusterorganizationstockreportctrl"><strong>ngm.widget.organization.stock</strong></a></li>
+<li><strong>ngm.widget.form.organization.list</strong></li>
+<li><strong>ngm.widget.upload.beneficiaries.stock.report</strong></li>
+<li><a href="/module/#cluster-module"><strong>ngmCluster</strong></a> </li>
+<li><strong>ngmiMMAP</strong></li>
+</ul>
+<h3 id="custom-module-for-country">Custom Module for Country</h3>
+<ul>
+<li><strong>ngmBangladesh</strong></li>
+<li><strong>ngmEthiopia</strong></li>
+</ul>
+<h3 id="custom-module-for-cluster">Custom Module for Cluster</h3>
+<ul>
+<li><strong>ngmNutrition</strong></li>
+</ul>
+<h3 id="custom-module-for-project">Custom Module for Project</h3>
+<ul>
+<li><strong>ngmDews</strong></li>
+<li><strong>ngmDrr</strong></li>
+<li><strong>ngmEpr</strong></li>
+<li><strong>ngmSbp</strong></li>
+<li><strong>ngmDrought</strong></li>
+</ul>
+<h2 id="cluster-module">Cluster Module</h2>
+<p>Inside Cluster Module there are Dashboard Feature and Reports Feature.</p>
+<p>Dashboard Feature purpose  to summarize all data collected by ReportHub and then show it to user
+Report Feature is to create report based on project and record every progress of the project by user</p>
+<h3 id="reports">Reports</h3>
+<p>Report Have 4 main function</p>
+<h4 id="1-project-plandetail">1. Project Plan/Detail</h4>
+<h4 id="11-clusterprojectdetailsctrl">1.1 ClusterProjectDetailsCtrl</h4>
+<p><code>Controller: ClusterProjectDetailsCtrl</code></p>
+<p><img alt="title" src="../img/project_detail_diagram1.png" /></p>
+<p>The purpose of this controller is to make new  Project Detail/Plan or to retrieve Project Detail/Plan that already made. In the Project Detail there are 3 main form</p>
+<ul>
+<li>From Project Plan (mandatory)</li>
+<li>Form Target Location ( mandatory)</li>
+<li>Form  Target Beneficiaries (optional)</li>
+<li>Etc.</li>
+</ul>
+<p>All form above manage by  ClusterProjectFormDetailsCtrl Controller on <strong>ngm.widget.project.details</strong> module.</p>
+<h4 id="12-clusterprojectformdetailsctrl">1.2 ClusterProjectFormDetailsCtrl</h4>
+<p><code>Module:ngm.widget.project.details</code><br />
+<code>Controller : ClusterProjectFormDetailsCtrl</code></p>
+<p><img alt="title" src="../img/project_detail_diagram2.png" /></p>
+<p>Within this controller there are several services used, are as follows :  </p>
+<ul>
+<li>ngmClusterLists : to provide list that used in the form like list activities, list clusters and many more</li>
+<li>ngmClusterHelper : to create or set up new project </li>
+<li>ngmClusterBeneficiaries: to set form for target beneficiaries </li>
+<li>ngmClusterLocations: to set up the location in target location form</li>
+<li>ngmClusterValidation : to validate form </li>
+</ul>
+<p>Function in this controller</p>
+<ul>
+<li>addLocation           :  function to add location in target location form. this function get the template attribute from function addLocation   <br />
+<strong>ngmClusterLocations</strong>.
+                           and set list Admin1,2,3 (Province,district and etc.) for the form using function filterLocations() in <strong>ngmClusterLocations</strong>.</li>
+<li>addLocationFromFile   :  function to add location by uploading file (CSV or Excel). </li>
+<li>addBeneficiary        :  to add target beenficiary for the project . this function get the template attribute from 
+                           addBeneficiary <strong>ngmClusterBeneficiaries</strong>. and set the list for input in target beneficiary form. </li>
+<li>validate              : function to validate all form  using <strong> <a href="/services/#validate" title="Title">ngmClusterValidation validate</a> </strong> function.</li>
+</ul>
+<h4 id="2-financial">2. Financial</h4>
+<h4 id="21-clusterprojectfinancialsctrl">2.1 ClusterProjectFinancialsCtrl</h4>
+<p><code>Controller : ClusterProjectFinancialsCtrl</code>  </p>
+<p>The purpose of this controller is to make report about budget(financial) on a project. In the Financial have a form.  </p>
+<p>The form manage by ClusterProjectFormFinancialCtrl Controller on <strong>ngm.widget.project.financials</strong> module. </p>
+<h4 id="22-clusterprojectformfinancialctrl">2.2 ClusterProjectFormFinancialCtrl</h4>
+<p><code>Module:ngm.widget.project.financials</code><br />
+<code>Controller : ClusterProjectFormFinancialCtrl</code></p>
+<p><img alt="financial-diagram" src="../img/financial-diagram.png" /></p>
+<p>Within this controller there are several services used, are as follows :<br />
+- ngmClusterLists : to provide currencies list that used in the form.
+- ngmClusterFinancial: to provide some function that used in controller.</p>
+<p>Function in this controller</p>
+<ul>
+<li>addBudgetItem                     : function to add budget in form.  </li>
+<li>validateFinancialDetailsForm      : function to validate the form using <strong><a href="">ngmClusterFinancial validateBudgets</a></strong> function.  </li>
+<li>removeBudgetItem                  : function to remove budget.  </li>
+</ul>
+<h4 id="3-monthly-report">3. Monthly Report</h4>
+<p><img alt="all-monthly-diagram" src="../img/all-monthly-diagram.png" />  </p>
+<h4 id="31-clusterprojectreportslistctrl">3.1 ClusterProjectReportsListCtrl</h4>
+<p><code>Controller : ClusterProjectReportsListCtrl</code></p>
+<p>The purpose of this controller purpose is to show report for each month based on project periode.
+ClusterProjectReportsListCtrl Controller is to retrieve report that should be completed by user based on month.</p>
+<h4 id="32-clusterprojectreportctrl">3.2 ClusterProjectReportCtrl</h4>
+<p><code>Controller : ClusterProjectReportCtrl</code></p>
+<p>The purpose of this controller is to make report monthly . The Monthly Report have a form that manage by ClusterProjectFormReportCtrl.<br />
+In Monthly report form the main information that should be reported is beneficiary, so the form that should be completed is beneficiary form.  </p>
+<h4 id="33-clusterprojectformreportctrl">3.3 ClusterProjectFormReportCtrl</h4>
+<p><code>Module:ngm.widget.project.report</code><br />
+<code>Controller : ClusterProjectFormReportCtrl</code>
+<img alt="all-monthly-diagram" src="../img/monthly-report-diagram.png" />  </p>
+<p>Within this controller there are several services used, are as follow :  </p>
+<ul>
+<li>ngmClusterLists : to provide currencies list that used in the form.</li>
+<li>ngmClusterHelper : to clean the report</li>
+<li>ngmClusterBeneficiaries: to set form for beneficiaries , to set intial atrribute to make new beneficiary, to remove report etc.</li>
+<li>ngmClusterValidation : to validate the form</li>
+</ul>
+<p>function in this controller</p>
+<ul>
+<li>addBeneficiary   : function to add beneficairy in form. Using <strong><a href="/services/#addbeneficiary">ngmClusterBeneficiaries addBeneficiary</a></strong> function to set inital attribute/property  and <strong><a href="/services/#setbeneficiariesinputs">ngmClusterBeneficiaries setBeneficiariesInputs</a></strong> function to set the input that will be used in form.</li>
+<li>copyPreviousMonth: function to copy report from previous month report.</li>
+<li>removeBeneficiary: function to remove beneficiary from report using <strong> <a href="/services/#removebeneficiary" title="Title">ngmClusterBeneficiaries removeBeneficiary</a> </strong></li>
+<li>removeReport: functiom remove report</li>
+<li>validateBeneficiariesDetailsForm: function to validate all beneficiary form the monthly report using <strong><a href="/services/#validatebeneficiaries" title="Title">ngmClusterValidation validateBeneficiaries</a></strong> function.</li>
+</ul>
+<h4 id="4-stock-report">4. Stock Report</h4>
+<h4 id="41-clusterorganizationstockslistctrl">4.1 ClusterOrganizationStocksListCtrl</h4>
+<p>This Controller purpose is to show stock report for each month based on project periode.
+ClusterOrganizationStocksListCtrl Controller is to retrieve report that should be completed by user based on month.
+Another  purpose is to add a location warehouse for stock. Form to add new location is manage by ClusterOrganizationStocksFormList Controller on <strong>ngm.widget.organization.stocks.list</strong> .  </p>
+<h4 id="42-clusterorganizationstocksformlist">4.2 ClusterOrganizationStocksFormList</h4>
+<p><code>Module: ngm.widget.organization.stocks.list</code><br />
+<code>Controller: ClusterOrganizationStocksFormList</code></p>
+<p>Within this controller there are several services used, are as follow :
+- ngmClusterHelper : to set new location  attribute</p>
+<p>function in this controller </p>
+<ul>
+<li>addlocation : function to add new warehouse location</li>
+<li>removeLocation: function to remove warehouse location </li>
+</ul>
+<h4 id="43-clusterorganizationstockreportctrl">4.3 ClusterOrganizationStockReportCtrl</h4>
+<p>The purpose of this controller is to make stock report . The Stock Report have form that manage by ClusterOrganizationStockForm Controller on <strong>ngm.widget.organization.stock</strong> module  </p>
+<h4 id="44-clusterorganizationstockform">4.4 ClusterOrganizationStockForm</h4>
+<p><code>Module: ngm.widget.organization.stock</code><br />
+<code>Controller: ClusterOrganizationStockForm</code>   </p>
+<p>Within this controller there are several services used, are as follow :  </p>
+<ul>
+<li>ngmClusterLists : to provide currencies list that used in the form.</li>
+<li>ngmClusterHelper : to clean the report</li>
+</ul>
+<p>function in this controller</p>
+<ul>
+<li>addStock :  function to add stock in form</li>
+<li>removeStock : functio to remove stock from report</li>
+<li>validateForm : function to validate stock form</li>
+<li>copyPrevReport : function to copy report stock from previous report.  </li>
+</ul>
+<h2 id="authentication-module">Authentication Module</h2>
+<p>A module that provides a function to authenticating and manage user (CRUD) using ngmAuth services. 
+And the controller that manage all the form for authentication are <code>AuthenticationFormCtrl</code>. <br />
+Below is list of function that provides by this module.  </p>
+<h4 id="1-sign-in-register">1. Sign In / Register</h4>
+<h4 id="2-log-in">2. Log In</h4>
+<h4 id="3-log-out">3. Log Out</h4>
+<h4 id="4-update-profile">4. Update Profile</h4>
+<h4 id="5-delete-user">5. Delete User</h4>
+<h4 id="6-reset-password">6. Reset Password</h4>
+<h4 id="7-manage-user-access">7. Manage User Access</h4>
+<!-- ## Custom Module -->
+
+<!-- ![title](img/test.png)
+
+Custom Module are Module to make an instant module for specific project or program -->
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../start/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Getting Started" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Getting Started
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../services/" class="md-footer__link md-footer__link--next" aria-label="Next: Services" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Services
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.361d90f1.min.js"}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.289a2a4b.min.js"></script>
+      
+    
+  </body>
+</html>
